@@ -12,3 +12,4 @@ redis-server
 .next
 
 coverage
+.contentlayer
