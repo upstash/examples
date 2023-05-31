@@ -20,8 +20,8 @@ export const Example = defineDocumentType(() => ({
   computedFields: {
     github_url: {
       type: "string",
-      resolve: (doc: any) => `https://github.com/upstash/examples/${doc._raw.flattenedPath.split("/").at(-1)}`,
-    },
+      resolve: (doc: any) => `https://github.com/upstash/examples/blob/main/examples/${doc._raw.flattenedPath}.md`,
+    },                     //   https://github.com/upstash/examples/blob/main/examples/redis-with-nextjs/README.md
 
   },
 
