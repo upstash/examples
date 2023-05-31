@@ -1,5 +1,5 @@
 ---
-title: Redis with Next.js
+title: Redis with Next.js - changed
 products: ["redis"]
 stack: ["Next.js"]
 use_cases: ["Caching"]
