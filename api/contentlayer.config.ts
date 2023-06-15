@@ -1,8 +1,5 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
-
-
-
 export const Example = defineDocumentType(() => ({
   name: "Example",
   filePathPattern: "./**/README.md",
@@ -21,17 +18,12 @@ export const Example = defineDocumentType(() => ({
     github_url: {
       type: "string",
       resolve: (doc: any) => `https://github.com/upstash/examples/blob/main/examples/${doc._raw.flattenedPath}.md`,
-    },                     //   https://github.com/upstash/examples/blob/main/examples/redis-with-nextjs/README.md
-
+    }, //   https://github.com/upstash/examples/blob/main/examples/redis-with-nextjs/README.md
   },
-
 }));
-
-
 
 export default makeSource({
   contentDirPath: "../examples",
   contentDirExclude: ["**/node_modules", "."],
   documentTypes: [Example],
-
 });
