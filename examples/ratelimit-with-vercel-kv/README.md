@@ -1,9 +1,9 @@
 ---
-title: The name of the example
-products: ["redis", "kafka", "qstash"]
-stack: ["Next.js", "Vercel", "Supabase", "Deno"]
-use_cases: ["Caching", "Ratelimiting"]
-author: "your_github_username"
+title: Ratelimiting with Vercel KV
+products: ["redis"]
+stack: ["Next.js", "Vercel"]
+use_cases: ["Ratelimiting"]
+author: "chronark"
 ---
 
 
