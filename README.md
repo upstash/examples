@@ -15,7 +15,10 @@
     </defs>
 </svg>
     <h1 align="center">Upstash Examples</h1>
+
+[![Open Bounties](https://img.shields.io/endpoint?url=https%3A%2F%2Fconsole.algora.io%2Fapi%2Fshields%2Fupstash%2Fbounties%3Fstatus%3Dopen)](https://console.algora.io/org/upstash/bounties?status=open)
 </div>
+
 
 <br/>
 
