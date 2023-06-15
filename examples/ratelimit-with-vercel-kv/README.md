@@ -11,54 +11,54 @@ author: "chronark"
 <div align="center">
 
 
-  <h3 align="center">The name of the example</h3>
+  <h3 align="center">Ratelimiting with Vercel KV</h3>
 
   <p align="center">
-    Add a short description if you want
+    Ratelimit your serverless and edge functions with Vercel KV
 
   </p>
 </div>
 
 
-Explain what the example does here.
-
+This example showcases how you can add serverless ratelimiting using [@upstash/ratelimit](https://github.com/upstash/ratelimit) and Vercel KV.
 
 ## Demo
 
-<!-- Add a link to the deployed example, reach out to @chronark for help -->
-[url](url)
-
+[ratelimit-with-vercel-kv.vercel.app](https://ratelimit-with-vercel-kv.vercel.app/)
 
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Perhaps this example requires a specific database setup, or a 3rd party service.
-List them here and explain how to set them up.
+All you need is a Vercel account and [Vercel KV database](https://vercel.com/storage/kv)
 
 ### Quickstart
-
-Explain briefly how to install and run the example locally:
 
 
 1. Clone the repo
    ```sh
    git clone https://github.com/upstash/examples.git
+   cd examples/examples
    ```
-2. Install NPM packages
+2. Install packages
    ```sh
-   npm install
+   pnpm install
    ```
 3. Enter your secrets in `.env`
    ```.env
-   UPSTASH_REDIS_REST_URL=""
-   UPSTASH_REDIS_REST_TOKEN=""
-   ```
+  KV_URL=""
+KV_REST_API_URL=""
+KV_REST_API_TOKEN=""
+KV_REST_API_READ_ONLY_TOKEN=""
 
+   ```
+4. Run the app
+   ```sh
+   pnpm dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
 ### Learn More
