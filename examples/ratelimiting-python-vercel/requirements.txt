@@ -1,0 +1,2 @@
+upstash-ratelimit
+sanic==19.6.0
