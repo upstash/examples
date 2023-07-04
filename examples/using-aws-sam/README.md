@@ -1,5 +1,5 @@
 ---
-title: Using AWS SAM
+title: Using AWS SAM with Redis
 products: ["redis"]
 stack: ["Node.js", "AWS SAM"]
 use_cases: ["Introduction"]
@@ -9,7 +9,7 @@ author: "noahfschr"
 <br />
 <div align="center">
 
-  <h3 align="center"> Using AWS SAM</h3>
+  <h3 align="center"> Using AWS SAM with Redis</h3>
 
   <p align="center">
     Learn how to utilize AWS SAM with Upstash.

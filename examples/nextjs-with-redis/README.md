@@ -12,7 +12,7 @@ author: "enesakar"
   <h3 align="center">Next.js with Redis</h3>
 
   <p align="center">
-   Utilize Redis as a state holder for Next.js
+   Transform your Next.js applications with Redis as a state holder, enabling efficient state management, scalability, and real-time updates for an enhanced user experience.
   </p>
 </div>
 

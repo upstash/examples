@@ -1,8 +1,8 @@
 ---
-title: Ratelimiting with Vercel KV
+title: Using AWS Lambda with Upstash Redis
 products: ["redis"]
 stack: ["Node.js", "AWS Lambda"]
-use_cases: ["Ratelimiting"]
+use_cases: ["Introduction", "Ratelimiting"]
 author: "enesakar"
 ---
 
@@ -11,7 +11,7 @@ author: "enesakar"
 <div align="center">
 
 
-  <h3 align="center">AWS Lambda example</h3>
+  <h3 align="center">Using AWS Lambda with Upstash Redis</h3>
 
   <p align="center">
     Use Serverless Redis with Lambda functions

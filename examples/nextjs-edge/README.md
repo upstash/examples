@@ -2,7 +2,7 @@
 title: Next.js Edge Functions
 products: ["redis"]
 stack: ["Next.js"]
-use_cases: ["Edge functions"]
+use_cases: ["Edge"]
 author: "chronark"
 ---
 
@@ -12,7 +12,7 @@ author: "chronark"
   <h3 align="center">Next.js Edge Functions</h3>
 
   <p align="center">
-   Getting started with Next.js Edge Functions
+   Supercharge Next.js Edge Functions with Upstash Redis, integrating caching, efficient data storage, and real-time data processing for lightning-fast and highly responsive edge computing.
   </p>
 </div>
 

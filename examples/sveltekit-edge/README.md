@@ -1,15 +1,15 @@
 ---
-title: Guestbook with Sveltekit Edge
+title: Guest book with Sveltekit Edge
 products: ["redis"]
 stack: ["Sveltekit Edge", "Edge functions", "Vercel"]
-use_cases: ["Guestbook", "Edge functions"]
+use_cases: ["Guest book", "Edge"]
 author: "geoffrich"
 ---
 
 <br />
 <div align="center">
 
-  <h3 align="center"> Guestbook with Sveltekit Edge</h3>
+  <h3 align="center"> Guest book with Sveltekit Edge</h3>
 
   <p align="center"> 
    Build a guest book using SvelteKit and Upstash Redis, with deployment to Vercel Edge Functions.

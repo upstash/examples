@@ -12,7 +12,7 @@ author: "enesakar"
   <h3 align="center">Next.js API</h3>
 
   <p align="center">
-   Create your next.js api
+   Boost your Next.js API development with Upstash Redis, integrating powerful caching, efficient data storage, and real-time data processing for scalable and robust applications.
   </p>
 </div>
 

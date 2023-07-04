@@ -2,7 +2,7 @@
 title: Upstash Redis in Supabase Edge Functions
 products: ["redis"]
 stack: ["Node.js", "Supabase Edge Functions"]
-use_cases: ["Edge"]
+use_cases: ["Introduction", "Edge"]
 author: "thorwebdev"
 ---
 

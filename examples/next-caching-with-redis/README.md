@@ -1,15 +1,15 @@
 ---
-title: Caching for Next.js App
+title: Caching for Next.js App with Redis
 products: ["redis"]
 stack: ["Next.js"]
-use_cases: ["Caching", "Performance"]
+use_cases: ["Caching", "Performance improvement"]
 author: "ademilter"
 ---
 
 <br />
 <div align="center">
 
-  <h3 align="center">Caching for Next.js App</h3>
+  <h3 align="center">Caching for Next.js App with Redis</h3>
 
   <p align="center">
    Speed up your Next.js application using Serverless Redis

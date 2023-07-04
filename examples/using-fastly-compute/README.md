@@ -1,5 +1,5 @@
 ---
-title: Use Redis in Cloudflare Workers
+title: Use Redis in Fastly Compute
 products: ["redis"]
 stack: ["Node.js", "Fastly Compute"]
 use_cases: ["Introduction", "Edge"]
@@ -9,10 +9,10 @@ author: "enesakar"
 <br />
 <div align="center">
 
-  <h3 align="center">Use Redis in Cloudflare Workers</h3>
+  <h3 align="center">Use Redis in Fastly Compute</h3>
 
   <p align="center">
-    Learn how to utilize Redis on Fastly Compute
+    Unlock the potential of Redis within Fastly Compute to boost scalability, accelerate data retrieval, and optimize caching capabilities effortlessly
   </p>
 </div>
 

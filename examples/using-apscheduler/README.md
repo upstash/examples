@@ -11,7 +11,7 @@ author: "burak-upstash"
 <div align="center">
 
 
-  <h3 align="center">Job Processor</h3>
+  <h3 align="center">Apscheduler with Upstash Redis</h3>
 
   <p align="center">
     Flask & Celery job processing with Upstash Redis for background tasks and result storage.
@@ -19,9 +19,6 @@ author: "burak-upstash"
   </p>
 </div>
 
-
-
-# [Apscheduler](https://github.com/agronholm/apscheduler) with Upstash Redis
 
 ## A task scheduler, showcasing Apscheduler by using Upstash Redis.
 For this example, we are running scheduled processing, where we fetch 'eth' and 'btc' coin prices (mocked up by random int generation - since many APIs exist).

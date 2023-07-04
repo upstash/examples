@@ -2,7 +2,7 @@
 title: Redis Rust Client Config for Upstash Redis
 products: ["redis"]
 stack: ["Rust"]
-use_cases: ["Configuration"]
+use_cases: ["Introduction", "Configuration"]
 author: "dependabot"
 ---
 
@@ -12,7 +12,7 @@ author: "dependabot"
   <h3 align="center"> Redis Rust Client Config for Upstash Redis</h3>
 
   <p align="center">
-    Create a task queue with Upstash Redis
+    Learn how to configurate your Rust Redis client.
   </p>
 </div>
 

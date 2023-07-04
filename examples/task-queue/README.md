@@ -12,7 +12,7 @@ author: "noahfschr"
   <h3 align="center"> Task Queue with Bull</h3>
 
   <p align="center">
-    Create a task queue with Upstash Redis
+    Bull and Upstash Redis: Empowering efficient task queueing, prioritization, and distributed job processing for streamlined project management.
   </p>
 </div>
 

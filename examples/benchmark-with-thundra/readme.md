@@ -14,9 +14,7 @@ author: "enesakar"
   <h3 align="center">Benchmark Your Serverless Database with Thundra</h3>
 
   <p align="center">
-    
-    Comparing AWS Lambda performance with DynamoDB and Redis.
-
+    Thundra empowers you to benchmark your serverless database performance effortlessly by integrating Upstash Redis, enabling accurate measurement, analysis, and optimization of your database operations.
   </p>
 </div>
 

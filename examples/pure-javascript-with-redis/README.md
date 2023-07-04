@@ -12,7 +12,7 @@ author: "ademilter"
   <h3 align="center">Vanilla JavaScript with Redis</h3>
 
   <p align="center">
-   Example of Using the Redis Upstash API with Pure Javascript
+   Example of using the Redis Upstash API with Pure Javascript
   </p>
 </div>
 

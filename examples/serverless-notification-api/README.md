@@ -1,5 +1,5 @@
 ---
-title: Serverless Cloud with Upstash
+title: Serverless Notification API with Redis
 products: ["redis"]
 stack: ["React"]
 use_cases: ["Notification"]
@@ -9,10 +9,10 @@ author: "enesakar"
 <br />
 <div align="center">
 
-  <h3 align="center"> Serverless Cloud with Upstash</h3>
+  <h3 align="center"> Serverless Notification API with Redis</h3>
 
   <p align="center">
-    Create and deploy a project, that uses Upstash, to cloud.
+    Develop a robust Serverless Notification API with Redis, leveraging advanced data storage and retrieval for efficient real-time notifications at scale.
   </p>
 </div>
 

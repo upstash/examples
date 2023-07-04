@@ -1,5 +1,5 @@
 ---
-title: Using Render and Next.js with Upstash
+title: Using Resque and Next.js with Upstash
 products: ["redis"]
 stack: ["Node.js", "Resque"]
 use_cases: ["Multiple Queue Processing"]
@@ -9,7 +9,7 @@ author: "dependabot"
 <br />
 <div align="center">
 
-  <h3 align="center">Fly Example</h3>
+  <h3 align="center">Using Resque and Next.js with Upstash</h3>
 
   <p align="center">
     Learn how to utilize Redis with Render and Next.js. Deploy the project to Vercel.

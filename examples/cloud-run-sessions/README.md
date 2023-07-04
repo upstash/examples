@@ -10,7 +10,6 @@ author: "enesakar"
 <br />
 <div align="center">
 
-
   <h3 align="center">Session Management on Google Cloud Run with Serverless Redis</h3>
 
   <p align="center">

@@ -2,14 +2,13 @@
 title: Leaderboard with Cloudflare and Redis
 products: ["redis"]
 stack: ["Node.js", "Cloudflare Workers"]
-use_cases: ["Leaderboard"]
+use_cases: ["Leaderboard", "Edge"]
 author: "noahfschr"
 ---
 
 
 <br />
 <div align="center">
-
 
   <h3 align="center">Leaderboard with Cloudflare and Redis</h3>
 

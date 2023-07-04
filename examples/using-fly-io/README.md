@@ -1,5 +1,5 @@
 ---
-title: Fly Example
+title: Fly Example with Redis
 products: ["redis"]
 stack: ["Node.js", "Fly"]
 use_cases: ["Introduction"]
@@ -9,10 +9,10 @@ author: "enesakar"
 <br />
 <div align="center">
 
-  <h3 align="center">Fly Example</h3>
+  <h3 align="center">Fly Example with Redis</h3>
 
   <p align="center">
-    Learn how to utilize Redis on Fly
+    Explore the seamless integration of Redis in Fly applications with this example project, harnessing the power of distributed caching and efficient data storage.
   </p>
 </div>
 

@@ -12,7 +12,7 @@ author: "dependabot"
   <h3 align="center"> Sidekiq Mailer</h3>
 
   <p align="center">
-    Learn how to create a mailer app using Ruby and Sidekiq
+    Optimize your email processing workflows with Sidekiq Mailer, seamlessly leveraging the power of Upstash Redis for efficient queuing, background job processing, and reliable email delivery.
   </p>
 </div>
 

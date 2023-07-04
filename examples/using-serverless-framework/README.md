@@ -12,7 +12,7 @@ author: "dependabot"
   <h3 align="center"> Deploy with Serverless Framework</h3>
 
   <p align="center">
-    Crate and deploy a project using Serverless
+    Streamline your deployment process using the Serverless Framework, incorporating Redis for enhanced scalability, efficient data management, and seamless integration with cloud services.
   </p>
 </div>
 

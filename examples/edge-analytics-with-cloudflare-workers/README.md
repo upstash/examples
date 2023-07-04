@@ -2,7 +2,7 @@
 title: Edge Analytics with Cloudflare Workers
 products: ["redis"]
 stack: ["Node.js", "Cloudflare Workers"]
-use_cases: ["Analytics"]
+use_cases: ["Analytics", "Edge"]
 author: "noahfschr"
 ---
 

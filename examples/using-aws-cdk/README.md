@@ -1,5 +1,5 @@
 ---
-title: Using AWS CDK
+title: Using AWS CDK with Redis
 products: ["redis"]
 stack: ["AWS CDK", "Node.js"]
 use_cases: ["Introduction"]
@@ -9,7 +9,7 @@ author: "noahfschr"
 <br />
 <div align="center">
 
-  <h3 align="center"> Using AWS SDK</h3>
+  <h3 align="center"> Using AWS SDK with Redis</h3>
 
   <p align="center">
     Learn how to utilize AWS CDK with Upstash

@@ -12,7 +12,7 @@ author: "enesakar"
   <h3 align="center"> Rate Limiting AWS Lambda with Redis</h3>
 
   <p align="center">
-    Rate limit your AWS Lambda function
+    Efficiently implement rate limiting for AWS Lambda functions using Redis, ensuring optimal performance and scalability while effectively managing and controlling API request rates.
   </p>
 </div>
 

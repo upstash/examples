@@ -1,17 +1,15 @@
 ---
-title: API with CDK
+title: Building an API with CDK and Redis
 products: ["redis"]
 stack: ["Node.js", "Typescript", "CDK"]
-use_cases: ["CDK"]
+use_cases: ["Introduction", "CDK"]
 author: "noahfschr"
 ---
 
 
 <br />
 <div align="center">
-
-
-  <h3 align="center">API with CDK</h3>
+  <h3 align="center">Building an API with CDK and Redis</h3>
 
   <p align="center">
    Learn how to utilize Upstash with CDK

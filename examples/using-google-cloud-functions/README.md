@@ -9,10 +9,10 @@ author: "enesakar"
 <br />
 <div align="center">
 
-  <h3 align="center">Fly Example</h3>
+  <h3 align="center">Using Google Cloud Functions with Upstash</h3>
 
   <p align="center">
-    Learn how to utilize Redis on Google Cloud Functions
+    Effortlessly integrate Google Cloud Functions with Upstash, unlocking the combined potential of serverless computing and Redis for efficient data processing, caching, and real-time application development.
   </p>
 </div>
 

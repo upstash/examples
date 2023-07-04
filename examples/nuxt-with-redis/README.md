@@ -12,7 +12,7 @@ author: "ademilter"
   <h3 align="center">NuxtJS with Redis</h3>
 
   <p align="center">
-   Utilize Redis as a state holder for Nuxt.js
+   Unlock the potential of Upstash Redis as a powerful state store in your Nuxt.js applications, enabling seamless state management, enhanced scalability, and real-time updates for a dynamic and responsive user experience.
   </p>
 </div>
 
