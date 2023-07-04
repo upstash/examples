@@ -31,19 +31,6 @@ Web app that users connect to via Metamask. Using public adresses of the wallet,
 
 
 
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-Perhaps this example requires a specific database setup, or a 3rd party service.
-List them here and explain how to set them up.
-
-### Quickstart
-
-
 
 ## Deploy to Vercel
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fupstash%2Fexamples%2Ftree%2Fmaster%2Fexamples%2Fweb3-preferences&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17)
