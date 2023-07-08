@@ -8,6 +8,8 @@ author: "moinulmoin"
 
 This is an example of how to do [Next.js](https://nextjs.org/) Authentication with [NextAuth.js](https://next-auth.js.org/) and [Serverless Redis by Upstash](https://upstash.com/).
 
+Live Demo: https://nextauth-upstash-redis.vercel.app/
+
 ## Getting Started
 
 - Download or Clone this repository
