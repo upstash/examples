@@ -25,10 +25,7 @@ export default function Index() {
       <p>
         It took <b>{loadingTime} ms</b> to read the number of button clicks from{" "}
         <a href="https://upstash.com/redis">Upstash Redis</a>{" "}
-        <a href="https://docs.upstash.com/redis/features/globaldatabase">
-          Global Database
-        </a>
-        .
+        <a href="https://docs.upstash.com/redis/features/globaldatabase">Global Database</a>.
       </p>
     </div>
   );

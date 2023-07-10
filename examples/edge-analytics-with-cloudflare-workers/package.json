@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "ioredis": "^4.27.6"
+    "dotenv": "^16.3.1",
+    "ioredis": "^5.3.2"
   }
 }

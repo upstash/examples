@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
-var Redis = require("ioredis");
+const Redis = require("ioredis");
 
-let time = new Date();
+const time = new Date();
 
-if (typeof client === 'undefined') {
-    var client = new Redis(process.env.REDIS_URL);
+if (typeof client === "undefined") {
+  const client = new Redis(process.env.REDIS_URL);
 }
 
-module.exports.hello = async(event) => {
-    console.log("hello")
-    await client.set("hello", "world");
-    let response = await client.get("hello");
-    return {response : response + "-" + time}
+module.exports.hello = async (event) => {
+  console.log("hello");
+  await client.set("hello", "world");
+  const response = await client.get("hello");
+  return { response: `${response}-${time}` };
 };

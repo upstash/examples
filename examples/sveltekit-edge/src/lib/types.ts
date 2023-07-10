@@ -1,4 +1,4 @@
 export interface Visit {
-	city: string;
-	count: string;
+  city: string;
+  count: string;
 }

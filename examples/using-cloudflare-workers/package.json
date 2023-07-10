@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@upstash/redis": "^1.4.0"
+    "@upstash/redis": "^1.22.0"
   }
 }

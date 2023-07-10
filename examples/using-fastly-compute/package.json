@@ -8,14 +8,14 @@
     "node": "^16"
   },
   "devDependencies": {
-    "core-js": "^3.19.1",
-    "webpack": "^5.64.0",
-    "webpack-cli": "^4.9.1"
+    "core-js": "^3.31.1",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@fastly/js-compute": "^0.2.1",
-    "@upstash/redis": "^1.0.0",
-    "flight-path": "^1.0.10"
+    "@fastly/js-compute": "^2.5.0",
+    "@upstash/redis": "^1.22.0",
+    "flight-path": "^1.0.13"
   },
   "scripts": {
     "prebuild": "webpack",

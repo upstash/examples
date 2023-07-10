@@ -1,8 +1,5 @@
-import '../styles/globals.css'
-import {
-  ApolloClient,
-  ApolloProvider, createHttpLink, InMemoryCache,
-} from "@apollo/client";
+import "../styles/globals.css";
+import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from "@apollo/client";
 
 const link = createHttpLink({
   uri: "https://graphql-us-east-1.upstash.io/",
@@ -17,7 +14,11 @@ const client = new ApolloClient({
 });
 
 function MyApp({ Component, pageProps }) {
-  return <ApolloProvider client={client}><Component {...pageProps} /> </ApolloProvider>
+  return (
+    <ApolloProvider client={client}>
+      <Component {...pageProps} />{" "}
+    </ApolloProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

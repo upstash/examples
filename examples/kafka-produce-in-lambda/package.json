@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.24.0",
-    "kafkajs": "^1.15.0"
+    "axios": "^1.4.0",
+    "kafkajs": "^2.2.4"
   }
 }

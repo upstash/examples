@@ -7,10 +7,11 @@ export default async function handler(req, res) {
 
   switch (method) {
     // update a todo
-    case "PUT":
+    case "PUT": {
       const todo = JSON.stringify({ text, status });
       await redis.hset(databaseName, { [id]: todo });
       return res.status(200).json({ message: "Updated" });
+    }
 
     // delete a todo
     case "DELETE":

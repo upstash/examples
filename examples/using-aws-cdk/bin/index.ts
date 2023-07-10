@@ -1,11 +1,7 @@
 import * as cdk from "@aws-cdk/core";
 import { HttpApiStack } from "./stack";
 
-class ApiStack extends HttpApiStack {
-  constructor(scope: cdk.App, id: string, props: cdk.StackProps) {
-    super(scope, id, props);
-  }
-}
+class ApiStack extends HttpApiStack {}
 
 const app = new cdk.App();
 

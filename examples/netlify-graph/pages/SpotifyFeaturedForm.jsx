@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React, { useState } from "react";
-import { Auth } from 'netlify-graph-auth';
+import { Auth } from "netlify-graph-auth";
 
 const { NetlifyGraphAuth } = Auth;
 
@@ -13,7 +13,7 @@ export default function Form(props) {
       ? null
       : new NetlifyGraphAuth({
           siteId: props.siteId,
-        })
+        }),
   );
 
   const submitForm = async () => {
@@ -21,9 +21,9 @@ export default function Form(props) {
       body: JSON.stringify(formVariables),
       headers: {
         "Content-Type": "application/json",
-        ...auth?.authHeaders()
+        ...auth?.authHeaders(),
       },
-      method: "POST"
+      method: "POST",
     });
 
     const formResult = await res.json();
@@ -39,52 +39,53 @@ export default function Form(props) {
       </Head>
       <main>
         <h1>{props.title}</h1>
-        <form onSubmit={event => { event.preventDefault(); submitForm() }}>
-            
-            <input type="submit" />
-          </form>
-        {needsLoginService ? (
-          <button
-          onClick={async () => {
-            await auth.login(needsLoginService);
-            const loginSuccess = await auth.isLoggedIn(needsLoginService);
-            if (loginSuccess) {
-              console.log("Successfully logged into " + needsLoginService);
-              submitForm();
-            } else {
-              console.log("The user did not grant auth to " + needsLoginService);
-            }
+        <form
+          onSubmit={(event) => {
+            event.preventDefault();
+            submitForm();
           }}
         >
-          {`Log in to ${needsLoginService}`}
-        </button>) 
-        : null}
-        {result &&
-        <div
+          <input type="submit" />
+        </form>
+        {needsLoginService ? (
+          <button
+            onClick={async () => {
+              await auth.login(needsLoginService);
+              const loginSuccess = await auth.isLoggedIn(needsLoginService);
+              if (loginSuccess) {
+                console.log(`Successfully logged into ${needsLoginService}`);
+                submitForm();
+              } else {
+                console.log(`The user did not grant auth to ${needsLoginService}`);
+              }
+            }}
+          >
+            {`Log in to ${needsLoginService}`}
+          </button>
+        ) : null}
+        {result && (
+          <div
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
               gap: "30px",
-              margin: "30px"
+              margin: "30px",
             }}
-        >
-          {result.spotifyData.data.spotify.featuredPlaylists.map((item) => {
-            return (
+          >
+            {result.spotifyData.data.spotify.featuredPlaylists.map((item) => {
+              return (
                 <figure style={{ margin: "0" }}>
-                  <img
-                      style={{ display: "block", width: "25%" }}
-                      src={item.images[0].url}
-                      alt={item.name}
-                  />
+                  <img style={{ display: "block", width: "25%" }} src={item.images[0].url} alt={item.name} />
                   <figcaption style={{ margin: "10px 0 0" }}>{item.name}</figcaption>
                   <p style={{ margin: "10px 0 0" }}>{item.description}</p>
                 </figure>
-            );
-          })}
-        </div>}
+              );
+            })}
+          </div>
+        )}
       </main>
     </div>
-  )
+  );
 }
 
 export async function getServerSideProps(context) {
@@ -96,9 +97,9 @@ export async function getServerSideProps(context) {
   return {
     props: {
       title: "SpotifyFeatured form",
-      siteId: siteId
-    }
-  }
+      siteId: siteId,
+    },
+  };
 }
 
 const updateFormVariables = (setFormVariables, path, coerce) => {
@@ -111,7 +112,7 @@ const updateFormVariables = (setFormVariables, path, coerce) => {
       }
     } else {
       if ([undefined, null].indexOf(object[path[0]]) > -1) {
-        object[path[0]] = typeof path[1] === "number" ?  [] : {};
+        object[path[0]] = typeof path[1] === "number" ? [] : {};
       }
       setIn(object[path[0]], path.slice(1), value);
     }

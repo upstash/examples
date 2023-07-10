@@ -58,7 +58,6 @@ const Index = () => {
         <input
           type="text"
           name="text"
-          autoFocus
           aria-label="Add todo"
           className="input"
           placeholder="What needs to be done?"
@@ -69,24 +68,14 @@ const Index = () => {
 
       <div className="todos">
         {inCompleteTodos.map((todo) => (
-          <Todo
-            key={todo.id}
-            todo={todo}
-            updateTodo={updateTodo}
-            deleteTodo={deleteTodo}
-          />
+          <Todo key={todo.id} todo={todo} updateTodo={updateTodo} deleteTodo={deleteTodo} />
         ))}
       </div>
 
       {completedTodos.length > 0 && (
         <div className="todos todos-done">
           {completedTodos.map((todo) => (
-            <Todo
-              key={todo.id}
-              todo={todo}
-              updateTodo={updateTodo}
-              deleteTodo={deleteTodo}
-            />
+            <Todo key={todo.id} todo={todo} updateTodo={updateTodo} deleteTodo={deleteTodo} />
           ))}
         </div>
       )}
@@ -95,6 +84,7 @@ const Index = () => {
         <a
           target="_blank"
           href="https://github.com/upstash/redis-examples/tree/master/next-todo-app-with-redis"
+          rel="noreferrer"
         >
           View source on GitHub
         </a>

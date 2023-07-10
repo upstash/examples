@@ -1,13 +1,13 @@
 import Redis from "ioredis";
 
-let redis = new Redis(process.env.REDIS_URL);
+const redis = new Redis(process.env.REDIS_URL);
 
 export default async (req, res) => {
   let start = Date.now();
   let cache = await redis.get("cache");
   cache = JSON.parse(cache);
 
-  let result = {};
+  const result = {};
 
   if (cache) {
     console.log("loading from cache");

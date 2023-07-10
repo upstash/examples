@@ -9,9 +9,7 @@ const SESSION_DURATION_SECONDS = 30;
 const redis = Redis.fromEnv();
 
 export const config = {
-  matcher: [
-    "/",
-  ],
+  matcher: ["/"],
 };
 
 export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
@@ -19,7 +17,7 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
 
   const size = await redis.dbsize();
 
-  console.log("current capacity:" + size);
+  console.log(`current capacity:${size}`);
   // there is enough capacity
   if (size < TOTAL_ACTIVE_USERS) {
     return getDefaultResponse(req, userId);
@@ -38,8 +36,7 @@ export default async function middleware(req: NextRequest, ev: NextFetchEvent) {
 
 function makeid(length: number) {
   let result = "";
-  const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   const charactersLength = characters.length;
   for (let i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * charactersLength));
@@ -57,14 +54,14 @@ async function getDefaultResponse(request: NextRequest, userId: string) {
 
   const cookies = request.cookies;
   const now = Date.now();
-  const lastUpdate = cookies.get(COOKIE_NAME_TIME)?.value
+  const lastUpdate = cookies.get(COOKIE_NAME_TIME)?.value;
   let lastUpdateTime = 0;
   if (lastUpdate) lastUpdateTime = parseInt(lastUpdate);
   const diff = now - lastUpdateTime;
   const updateInterval = (SESSION_DURATION_SECONDS * 1000) / 2;
   if (diff > updateInterval) {
     await redis.setex(userId, SESSION_DURATION_SECONDS, "1");
-    newResponse.cookies.set(COOKIE_NAME_TIME, now.toString())
+    newResponse.cookies.set(COOKIE_NAME_TIME, now.toString());
   }
   newResponse.cookies.set(COOKIE_NAME_ID, userId);
   return newResponse;
