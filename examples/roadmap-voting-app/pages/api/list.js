@@ -1,19 +1,19 @@
-import { getRedis } from './_utils/redis'
+import { getRedis } from "./_utils/redis";
 
 module.exports = async (req, res) => {
-  let redis = getRedis()
-  let n = await redis.zrevrange('roadmap', 0, 100, 'WITHSCORES')
-  let result = []
+  const redis = getRedis();
+  const n = await redis.zrevrange("roadmap", 0, 100, "WITHSCORES");
+  const result = [];
   for (let i = 0; i < n.length - 1; i += 2) {
-    let item = {}
-    item['title'] = n[i]
-    item['score'] = n[i + 1]
-    result.push(item)
+    const item = {};
+    item["title"] = n[i];
+    item["score"] = n[i + 1];
+    result.push(item);
   }
 
-  redis.quit()
+  redis.quit();
 
   res.json({
     body: result,
-  })
-}
+  });
+};

@@ -17,9 +17,7 @@ export default function Home() {
     <main className="text-center">
       <h1 className="text-6xl font-bold">Covid Tracker</h1>
 
-      <p className="mt-4 text-2xl text-gray-500">
-        Top 10 countries with the most cases today
-      </p>
+      <p className="mt-4 text-2xl text-gray-500">Top 10 countries with the most cases today</p>
 
       <table className="mt-20 w-full text-left">
         <thead>

@@ -4,7 +4,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: "./src/index.js",
   optimization: {
-    minimize: true
+    minimize: true,
   },
   target: "webworker",
   output: {

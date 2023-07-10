@@ -6,11 +6,7 @@ export default function TodoItem({ id, text, status }: Todo) {
   return (
     <div className="todo">
       <Form method="put">
-        <input
-          type="hidden"
-          name="todo"
-          defaultValue={JSON.stringify({ id, text, status })}
-        />
+        <input type="hidden" name="todo" defaultValue={JSON.stringify({ id, text, status })} />
         <button type="submit" className="checkbox">
           {status && "✓"}
         </button>

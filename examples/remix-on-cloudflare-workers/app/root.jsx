@@ -1,11 +1,4 @@
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "remix";
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "remix";
 
 export function meta() {
   return {

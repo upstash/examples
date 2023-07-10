@@ -13,10 +13,10 @@ export class HttpApiStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props: cdk.StackProps) {
     super(scope, id, props);
 
-    const apiFn = new lambda.Function(this, `apiFn`, {
-      handler: `app.lambdaHandler`,
+    const apiFn = new lambda.Function(this, "apiFn", {
+      handler: "app.lambdaHandler",
       runtime: lambda.Runtime.NODEJS_14_X,
-      code: new lambda.AssetCode(path.resolve(__dirname, `../hello-world`)),
+      code: new lambda.AssetCode(path.resolve(__dirname, "../hello-world")),
     });
 
     const api = new apigtw.HttpApi(this, "HttpApi");

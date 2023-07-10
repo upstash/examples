@@ -41,7 +41,7 @@ export const patch: RequestHandler = async ({ request }) => {
   const todo = form.get("todo");
 
   const { id, text, status } = JSON.parse(todo as string);
-  let newTodo = { text, status: !status };
+  const newTodo = { text, status: !status };
 
   await redis.hset(databaseName, id, JSON.stringify(newTodo));
   return redirect;

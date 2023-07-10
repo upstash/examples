@@ -1,9 +1,5 @@
-import React, {Component} from 'react';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-  SafeAreaView,
-} from 'react-native-safe-area-context';
+import React, { Component } from "react";
+import { SafeAreaProvider, useSafeAreaInsets, SafeAreaView } from "react-native-safe-area-context";
 import {
   Image,
   FlatList,
@@ -22,10 +18,10 @@ import {
   Animated,
   Platform,
   ScrollView,
-} from 'react-native';
-import PlayerItem from './PlayerItem';
+} from "react-native";
+import PlayerItem from "./PlayerItem";
 
-var userlist = [];
+let userlist = [];
 export default class LeaderboardScreen extends Component<{}> {
   constructor(props) {
     super(props);
@@ -51,8 +47,8 @@ export default class LeaderboardScreen extends Component<{}> {
   }
 
   renderPlayerItems(){
-    var items = [];
-    var boardSize = userlist.length;
+    const items = [];
+    const boardSize = userlist.length;
     for (let i = 0; i < boardSize; i++) {
       const temp = i;
       items.push(
@@ -94,7 +90,7 @@ export default class LeaderboardScreen extends Component<{}> {
           }}
           renderItem={() => this.renderPlayerItems()}
           data={[{bos: 'boş', key: 'key'}]}
-          refreshing={true}></FlatList>
+          refreshing={true} />
         </View>
       </SafeAreaView>
     );

@@ -1,10 +1,7 @@
 export default function Todo({ todo, deleteTodo, updateTodo }) {
   return (
     <div className="todo">
-      <button
-        className="checkbox"
-        onClick={() => updateTodo({ ...todo, status: !todo.status })}
-      >
+      <button className="checkbox" onClick={() => updateTodo({ ...todo, status: !todo.status })}>
         {todo.status ? "✓" : ""}
       </button>
 

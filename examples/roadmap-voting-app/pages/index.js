@@ -1,94 +1,94 @@
-import Head from 'next/head'
-import { ToastContainer, toast } from 'react-toastify'
-import React, { useState, useEffect, useRef } from 'react'
+import Head from "next/head";
+import { ToastContainer, toast } from "react-toastify";
+import React, { useState, useEffect, useRef } from "react";
 
 function Home() {
-  const inputNewFeature = useRef()
-  const inputEmail = useRef()
-  const logo = process.env.LOGO ? process.env.LOGO : '/logo.png'
-  const [loaded, setLoaded] = useState(false)
-  const [items, setItems] = useState([])
+  const inputNewFeature = useRef();
+  const inputEmail = useRef();
+  const logo = process.env.LOGO ? process.env.LOGO : "/logo.png";
+  const [loaded, setLoaded] = useState(false);
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
-    refreshData()
-  }, [])
+    refreshData();
+  }, []);
 
   const refreshData = () => {
-    fetch('api/list')
+    fetch("api/list")
       .then((res) => res.json())
       .then(
         (result) => {
-          setItems(result.body)
-          setLoaded(true)
-          inputNewFeature.current.value = ''
+          setItems(result.body);
+          setLoaded(true);
+          inputNewFeature.current.value = "";
         },
         (error) => {
-          setLoaded(true)
-        }
-      )
-  }
+          setLoaded(true);
+        },
+      );
+  };
 
   const vote = (event, title) => {
     const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title: title }),
-    }
-    fetch('api/vote', requestOptions)
+    };
+    fetch("api/vote", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         if (data.error) {
-          toast.error(data.error, { hideProgressBar: true, autoClose: 3000 })
+          toast.error(data.error, { hideProgressBar: true, autoClose: 3000 });
         } else {
-          refreshData()
+          refreshData();
         }
-      })
-  }
+      });
+  };
 
   const handleNewFeature = (event) => {
     const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title: inputNewFeature.current.value }),
-    }
-    fetch('api/create', requestOptions)
+    };
+    fetch("api/create", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         if (data.error) {
-          toast.error(data.error, { hideProgressBar: true, autoClose: 5000 })
+          toast.error(data.error, { hideProgressBar: true, autoClose: 5000 });
         } else {
-          toast.info('Your feature has been added to the list.', {
+          toast.info("Your feature has been added to the list.", {
             hideProgressBar: true,
             autoClose: 3000,
-          })
-          refreshData()
+          });
+          refreshData();
         }
-      })
-    event.preventDefault()
-  }
+      });
+    event.preventDefault();
+  };
 
   const handleNewEmail = (event) => {
     const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: inputEmail.current.value }),
-    }
-    fetch('api/addemail', requestOptions)
+    };
+    fetch("api/addemail", requestOptions)
       .then((response) => response.json())
       .then((data) => {
         if (data.error) {
-          toast.error(data.error, { hideProgressBar: true, autoClose: 3000 })
+          toast.error(data.error, { hideProgressBar: true, autoClose: 3000 });
         } else {
-          toast.info('Your email has been added to the list.', {
+          toast.info("Your email has been added to the list.", {
             hideProgressBar: true,
             autoClose: 3000,
-          })
-          inputEmail.current.value = ''
-          refreshData()
+          });
+          inputEmail.current.value = "";
+          refreshData();
         }
-      })
-    event.preventDefault()
-  }
+      });
+    event.preventDefault();
+  };
 
   return (
     <div className="container">
@@ -115,10 +115,7 @@ function Home() {
               <div className="card" key={ind}>
                 <span>{item.title}</span>
                 <div className="upvotediv">
-                  <a
-                    onClick={(e) => vote(e, item.title)}
-                    href={'#' + item.title}
-                  >
+                  <a onClick={(e) => vote(e, item.title)} href={`#${item.title}`}>
                     &#x25B2; {item.score}
                   </a>
                 </div>
@@ -157,11 +154,7 @@ function Home() {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com/integrations/upstash"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://vercel.com/integrations/upstash" target="_blank" rel="noopener noreferrer">
           Powered by
           <img src="/vercel.svg" alt="Vercel Logo" />
           and
@@ -170,7 +163,7 @@ function Home() {
       </footer>
       <ToastContainer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

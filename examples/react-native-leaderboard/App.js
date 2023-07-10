@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   StyleSheet,
   Animated,
@@ -15,178 +15,196 @@ import {
   Platform,
   NativeModules,
   TouchableOpacity,
-  Image,} from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-  SafeAreaView,useSafeAreaFrame} from 'react-native-safe-area-context';
-import { NavigationContainer, navigation } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import {navigationRef} from './RootNavigation';
-import LeaderboardScreen from './Leaderboard';
+  Image,
+} from "react-native";
+import { SafeAreaProvider, useSafeAreaInsets, SafeAreaView, useSafeAreaFrame } from "react-native-safe-area-context";
+import { NavigationContainer, navigation } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { navigationRef } from "./RootNavigation";
+import LeaderboardScreen from "./Leaderboard";
 
-  class Appp extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        loading: true,
-        authenticated: false,
-        firstname: "",
-        lastname: "",
-        score: null
-      };
+class Appp extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      loading: true,
+      authenticated: false,
+      firstname: "",
+      lastname: "",
+      score: null,
+    };
+  }
+
+  async componentDidMount() {}
+
+  async addScore() {
+    if (isNaN(this.state.score)) {
+      Alert.alert("Error", "Please enter a valid score.");
+      return;
     }
-
-    async componentDidMount() {
-
+    if (this.state.firstname === "" || this.state.lastname === "" || this.state.score == null) {
+      Alert.alert("Error", "Please fill in the blanks.");
+      return;
     }
-
-    async addScore(){
-      if(isNaN(this.state.score)){
-        Alert.alert("Error", "Please enter a valid score.");
-        return;
-      }
-      if(this.state.firstname == "" || this.state.lastname == "" || this.state.score == null){
-        Alert.alert("Error", "Please fill in the blanks.");
-        return;
-      }
-      await fetch('https://f571j8y8s1.execute-api.us-east-1.amazonaws.com/add', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          firstname: this.state.firstname,
-          lastname: this.state.lastname,
-          score: parseInt(this.state.score)
-        }),
+    await fetch("https://f571j8y8s1.execute-api.us-east-1.amazonaws.com/add", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstname: this.state.firstname,
+        lastname: this.state.lastname,
+        score: parseInt(this.state.score),
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.message === "Score added successfully!") {
+          Alert.alert("Done!", "Score added successfully!");
+        } else {
+          Alert.alert("Error", "Please try again later.");
+        }
       })
-      .then(response => response.json())
-      .then(data => {
-          if(data.message == "Score added successfully!"){
-            Alert.alert("Done!", "Score added successfully!");
-          }
-          else{
-            Alert.alert("Error", "Please try again later.");
-          }
-      })
-      .catch(err => {
-        console.error(err)
+      .catch((err) => {
+        console.error(err);
         Alert.alert("Error", "Please try again later.");
       });
-    }
-  render(){
-    this.height = Math.round(Dimensions.get('screen').height);
-    this.width = Math.round(Dimensions.get('screen').width);
+  }
+  render() {
+    this.height = Math.round(Dimensions.get("screen").height);
+    this.width = Math.round(Dimensions.get("screen").width);
     return (
-      <SafeAreaView style={{
-        width: this.width,
-        height: this.height,
-        flex: 1,
-        alignItems: 'center'}}>
-        <StatusBar
-        backgroundColor="#f4511e"/>
-        <View style={{height: this.height/8}} />
+      <SafeAreaView
+        style={{
+          width: this.width,
+          height: this.height,
+          flex: 1,
+          alignItems: "center",
+        }}
+      >
+        <StatusBar backgroundColor="#f4511e" />
+        <View style={{ height: this.height / 8 }} />
         <View
           style={{
-            flex:1,
+            flex: 1,
             width: this.width,
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
           <View
             style={{
-              flex:1,
+              flex: 1,
               width: this.width,
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <TextInput
               spellCheck={false}
               autoCorrect={false}
               placeholderTextColor="rgba(0,0,0,0.4)"
               placeholder={"First name"}
               style={{
-                width: this.width*7/10,
-                borderColor: 'purple',
+                width: (this.width * 7) / 10,
+                borderColor: "purple",
                 borderWidth: 1,
-                borderRadius: 8
+                borderRadius: 8,
               }}
-              onChangeText={(text) =>
-                this.setState({firstname: text})
-              }></TextInput>
+              onChangeText={(text) => this.setState({ firstname: text })}
+            />
           </View>
           <View
             style={{
-              flex:1,
+              flex: 1,
               width: this.width,
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <TextInput
               spellCheck={false}
               autoCorrect={false}
               placeholderTextColor="rgba(0,0,0,0.4)"
               placeholder={"Last name"}
               style={{
-                width: this.width*7/10,
-                borderColor: 'purple',
+                width: (this.width * 7) / 10,
+                borderColor: "purple",
                 borderWidth: 1,
-                borderRadius: 8
+                borderRadius: 8,
               }}
-              onChangeText={(text) =>
-                this.setState({lastname: text})
-              }></TextInput>
+              onChangeText={(text) => this.setState({ lastname: text })}
+            />
           </View>
           <View
             style={{
-              flex:1,
+              flex: 1,
               width: this.width,
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <TextInput
               spellCheck={false}
               autoCorrect={false}
               placeholderTextColor="rgba(0,0,0,0.4)"
               placeholder={"Score"}
               style={{
-                width: this.width*7/10,
-                borderColor: 'purple',
+                width: (this.width * 7) / 10,
+                borderColor: "purple",
                 borderWidth: 1,
-                borderRadius: 8
+                borderRadius: 8,
               }}
-              onChangeText={(text) =>
-                this.setState({score: text})
-              }></TextInput>
+              onChangeText={(text) => this.setState({ score: text })}
+            />
           </View>
         </View>
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
           <TouchableHighlight
-            style={{backgroundColor: "green", alignItems: 'center', borderColor: "green",
-            borderRadius: 8, borderWidth: 1, paddingVertical: 10, paddingHorizontal: 20}}
-            onPress={() =>{this.addScore()}}>
-            <Text style={{color:"white"}}>Submit Score</Text>
+            style={{
+              backgroundColor: "green",
+              alignItems: "center",
+              borderColor: "green",
+              borderRadius: 8,
+              borderWidth: 1,
+              paddingVertical: 10,
+              paddingHorizontal: 20,
+            }}
+            onPress={() => {
+              this.addScore();
+            }}
+          >
+            <Text style={{ color: "white" }}>Submit Score</Text>
           </TouchableHighlight>
         </View>
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
           <TouchableHighlight
-            style={{backgroundColor: "#2196F3", alignItems: 'center', borderColor: "#2196F3",
-            borderRadius: 8, borderWidth: 1, paddingVertical: 10, paddingHorizontal: 20}}
-            onPress={() =>{this.props.navigation.navigate('Leaderboard')}}>
-            <Text style={{color:"white"}}>Go to Leaderboard</Text>
+            style={{
+              backgroundColor: "#2196F3",
+              alignItems: "center",
+              borderColor: "#2196F3",
+              borderRadius: 8,
+              borderWidth: 1,
+              paddingVertical: 10,
+              paddingHorizontal: 20,
+            }}
+            onPress={() => {
+              this.props.navigation.navigate("Leaderboard");
+            }}
+          >
+            <Text style={{ color: "white" }}>Go to Leaderboard</Text>
           </TouchableHighlight>
         </View>
       </SafeAreaView>
     );
-  };
-};
+  }
+}
 
 const Stack = createStackNavigator();
 
 const config = {
-  animation: 'timing',
+  animation: "timing",
   config: {
     duration: 0,
     stiffness: 1000,
@@ -198,7 +216,7 @@ const config = {
   },
 };
 const config2 = {
-  animation: 'spring',
+  animation: "spring",
   config: {
     duration: 1000,
     stiffness: 1000,
@@ -210,53 +228,53 @@ const config2 = {
   },
 };
 
-function App({navigation}) {
+function App({ navigation }) {
   return (
-        <NavigationContainer  ref={navigationRef}>
-          <Stack.Navigator>
-            <Stack.Screen
-              options={{
-                gestureEnabled: false,
-                title: "Submit Score",
-                headerTitleAlign: 'center',
-                headerStyle: {
-                  backgroundColor: '#f4511e',
-                },
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: 'bold',
-                },
-                transitionSpec: {
-                  open: config2,
-                  close: config2,
-                },
-              }}
-              name="Appp"
-              component={Appp}
-            />
+    <NavigationContainer ref={navigationRef}>
+      <Stack.Navigator>
+        <Stack.Screen
+          options={{
+            gestureEnabled: false,
+            title: "Submit Score",
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: "#f4511e",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            transitionSpec: {
+              open: config2,
+              close: config2,
+            },
+          }}
+          name="Appp"
+          component={Appp}
+        />
 
-            <Stack.Screen
-              options={{
-                gestureEnabled: false,
-                title: "Leaderboard",
-                headerTitleAlign: 'center',
-                headerStyle: {
-                  backgroundColor: '#f4511e',
-                },
-                headerTintColor: '#fff',
-                headerTitleStyle: {
-                  fontWeight: 'bold',
-                },
-                transitionSpec: {
-                  open: config,
-                  close: config,
-                },
-              }}
-              name="Leaderboard"
-              component={LeaderboardScreen}
-            />
-          </Stack.Navigator>
-        </NavigationContainer>
+        <Stack.Screen
+          options={{
+            gestureEnabled: false,
+            title: "Leaderboard",
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: "#f4511e",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            transitionSpec: {
+              open: config,
+              close: config,
+            },
+          }}
+          name="Leaderboard"
+          component={LeaderboardScreen}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 

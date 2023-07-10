@@ -31,8 +31,7 @@ export default function Home() {
 
   const RatingOption = ({ value }) => (
     <div>
-      <input type="radio" name="rating" value={value} required />{" "}
-      <label>{value}</label>
+      <input type="radio" name="rating" value={value} required /> <label>{value}</label>
     </div>
   );
 
@@ -51,22 +50,17 @@ export default function Home() {
           <label>Would you recommend us to your colleagues?</label>
 
           <div>
-            <input type="radio" name="recommendation" value="true" required />{" "}
-            <label>Yes</label>
+            <input type="radio" name="recommendation" value="true" required /> <label>Yes</label>
           </div>
 
           <div>
-            <input type="radio" name="recommendation" value="false" required />{" "}
-            <label>No</label>
+            <input type="radio" name="recommendation" value="false" required /> <label>No</label>
           </div>
         </div>
 
         <div>
           <label>Please share your thoughts... (Optional)</label>
-          <textarea
-            name="comment"
-            placeholder="This is what I liked most/this is what you can improve..."
-          ></textarea>
+          <textarea name="comment" placeholder="This is what I liked most/this is what you can improve..." />
         </div>
 
         <input type="submit" />

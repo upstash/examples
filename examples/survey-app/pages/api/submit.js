@@ -13,9 +13,7 @@ const submitHandler = async (req, res) => {
   };
 
   // generate a random id
-  const id =
-    Math.random().toString(36).substring(2, 15) +
-    Math.random().toString(36).substring(2, 15);
+  const id = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 
   // Insert data into Upstash redis
 
@@ -26,9 +24,7 @@ const submitHandler = async (req, res) => {
 
   try {
     //Store the survey data
-    await redis.hset(
-      `entries:${id}`, data
-    );
+    await redis.hset(`entries:${id}`, data);
 
     //Store the id of the survey to retrieve it later
     await redis.sadd("entries", `entries:${id}`);
