@@ -1,0 +1,16 @@
+{
+  "name": "content-filter-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@upstash/redis": "^1.1.0-alpha.0",
+    "axios": "^0.26.1",
+    "form-data": "^4.0.0"
+  }
+}

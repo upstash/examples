@@ -14,22 +14,15 @@ author: "burak-upstash"
   <h3 align="center">Web3 Preferences</h3>
 
   <p align="center">
-    Store user preferences in Upstash Redis for Web3 applications
-
+    Redis-driven Web3 Preferences for dynamic user experiences in decentralized applications.
   </p>
 </div>
 
-
 Web app that users connect to via Metamask. Using public adresses of the wallet, stores cross or in-platform preferences.
 
-
-
 ## Demo
-
 <!-- Add a link to the deployed example, reach out to @chronark for help -->
-[url](url)
-
-
+[Demo](url)
 
 
 ## Deploy to Vercel

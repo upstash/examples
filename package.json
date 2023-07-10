@@ -3,15 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "test": "turbo run test",
-    "dev": "turbo run dev --parallel",
-    "fmt": "pnpm rome check . --apply-suggested && pnpm rome format . --write",
-    "release": "pnpm fmt && pnpm build && pnpx changeset publish"
+    "install": "pnpm install -r",
+    "fmt": "pnpm rome check . --apply-unsafe && pnpm rome format . --write"
   },
   "devDependencies": {
-    "rome": "^11.0.0",
-    "turbo": "^1.10.7"
+    "rome": "^12.1.3"
   },
   "engines": {
     "node": ">=16.0.0"

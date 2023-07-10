@@ -1,0 +1,29 @@
+{
+  "name": "next-caching-with-redis",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "ioredis": "^5.3.2",
+    "next": "^13.4.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^2.2.0",
+    "unfetch": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.25",
+    "prettier": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^5.1.6"
+  }
+}

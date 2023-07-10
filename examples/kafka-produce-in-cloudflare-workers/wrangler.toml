@@ -1,0 +1,14 @@
+name = "produce-in-cloudflare-workers"
+type = 'webpack'
+account_id = 'REPLACE'
+route = ''
+zone_id = ''
+usage_model = ''
+workers_dev = true
+target_type = "webpack"
+
+[vars]
+UPSTASH_KAFKA_REST_URL = "REPLACE"
+UPSTASH_KAFKA_REST_USERNAME = "REPLACE"
+UPSTASH_KAFKA_REST_PASSWORD = "REPLACE"
+

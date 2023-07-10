@@ -1,5 +1,5 @@
 ---
-title: Job Processor
+title: Job Processor with Celery
 products: ["redis"]
 stack: ["Python", "Flask","Celery"]
 use_cases: ["Background jobs", "Result storage"]
@@ -9,18 +9,12 @@ author: "burak-upstash"
 
 <br />
 <div align="center">
-
-
   <h3 align="center">Job Processing with Celery</h3>
-
   <p align="center">
     Flask & Celery job processing with Upstash Redis for background tasks and result storage.
 
   </p>
 </div>
-
-
-
 
 ![celery](https://github.com/upstash/examples/blob/main/examples/using-celery/static/celery.png?raw=true)
 
