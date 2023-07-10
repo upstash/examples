@@ -2,7 +2,7 @@
 title: Ratelimiting with Vercel KV
 products: ["redis"]
 stack: ["Next.js", "Vercel"]
-use_cases: ["Ratelimiting"]
+use_cases: ["Rate limiting"]
 author: "chronark"
 ---
 

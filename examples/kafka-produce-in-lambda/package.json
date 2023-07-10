@@ -1,0 +1,15 @@
+{
+  "name": "produce-in-lambda",
+  "version": "1.0.0",
+  "description": "In this tutorial, we will produce events to Upstash Kafka from an AWS Lambda function.",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "kafkajs": "^1.15.0"
+  }
+}

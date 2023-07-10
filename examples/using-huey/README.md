@@ -1,5 +1,5 @@
 ---
-title: Parallel Job Running
+title: Parallel Job Running with Huey
 products: ["redis"]
 stack: ["Python", "Flask", "huey"]
 use_cases: ["Background jobs", "Concurrent processing"]
@@ -11,7 +11,7 @@ author: "burak-upstash"
 <div align="center">
 
 
-  <h3 align="center">Parallel Job Running</h3>
+  <h3 align="center">Parallel Job Running with Huey</h3>
 
   <p align="center">
     Flask server for concurrent processing of user-submitted tasks using huey.

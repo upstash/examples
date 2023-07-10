@@ -2,7 +2,7 @@
 title: Ratelimiting python serverless functions on Vercel
 products: ["redis"]
 stack: ["Python", "Vercel"]
-use_cases: ["Ratelimiting"]
+use_cases: ["Rate limiting"]
 author: "chronark"
 ---
 

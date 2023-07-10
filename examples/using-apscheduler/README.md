@@ -11,14 +11,13 @@ author: "burak-upstash"
 <div align="center">
 
 
-  <h3 align="center">Job Processor</h3>
+  <h3 align="center">Apscheduler with Upstash Redis</h3>
 
   <p align="center">
     Flask & Celery job processing with Upstash Redis for background tasks and result storage.
 
   </p>
 </div>
-
 
 
 [Apscheduler](https://github.com/agronholm/apscheduler) with Upstash Redis
