@@ -1,0 +1,34 @@
+[
+    {
+        "id": "1",
+        "url": "cat-1.jpg",
+        "name": "Chad",
+        "description": "A cat with whom you can have a beer with. Gets all the kitties.",
+        "width": 1400,
+        "height": 1700
+    },
+    {
+        "id": "2",
+        "url": "cat-2.jpg",
+        "name": "Karen",
+        "description": "A cat who more than occasionally asks to speak to the manager.",
+        "width": 1400,
+        "height": 1700
+    },
+    {
+        "id": "3",
+        "url": "cat-3.jpg",
+        "name": "Steve",
+        "description": "The cat who wears a turtle neck. Hmm, that reminds me of someone...",
+        "width": 1400,
+        "height": 1700
+    },
+    {
+        "id": "4",
+        "url": "cat-4.jpg",
+        "name": "Boxy",
+        "description": "A cat who loves boxes. And that's about it.",
+        "width": 1400,
+        "height": 1700
+    }
+]
