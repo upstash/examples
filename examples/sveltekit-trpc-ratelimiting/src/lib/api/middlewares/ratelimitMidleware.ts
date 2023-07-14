@@ -9,16 +9,11 @@ const ratelimit = new Ratelimit({
 	limiter: Ratelimit.slidingWindow(1, "60 s"),
 });
 
-const highfiveRatelimitMiddleware = middleware(async ({ path, next, ctx: { getClientAddress, setHeaders } }) => {
+const highfiveRatelimitMiddleware = middleware(async ({ path, next, ctx: { getClientAddress } }) => {
 	const ip = getClientAddress();
 	const identifier = `${path}-${ip}`;
 
 	const result = await ratelimit.limit(identifier);
-
-	setHeaders({
-		'X-RateLimit-Limit': result.limit.toString(),
-		'X-RateLimit-Remaining': result.remaining.toString()
-	});
 
 	if (!result.success) {
 		throw new TRPCError({
