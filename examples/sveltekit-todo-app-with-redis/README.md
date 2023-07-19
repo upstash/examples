@@ -1,38 +1,40 @@
-# create-svelte
+---
+title: SvelteKit Todo App with Redis
+products: ["redis"]
+stack: ["SvelteKit"]
+use_cases: ["Todo"]
+author: "geoffrich"
+---
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+<br />
+<div align="center">
 
-## Creating a project
+  <h3 align="center"> SvelteKit Todo App with Redis</h3>
 
-If you're seeing this, you've probably already done this step. Congrats!
+  <p align="center">
+    Build a Todo app using SvelteKit and Upstash Redis, with deployment to Vercel Edge Functions.
+  </p>
+</div>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Demo
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+[Demo](https://svelte-kit-todo-app-with-redis.vercel.app/)
 
-## Developing
+### Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+Once you've created a project and installed dependencies with `yarn` start a
+development server:
 
 ```bash
-npm run build
+yarn run dev
 ```
 
-You can preview the production build with `npm run preview`.
+### Learn More
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+To learn more about Upstash and its services, check out the following resources:
+
+- [Documentation](https://docs.upstash.com)
+- [Website](https://upstash.com)
+- [Blog](https://upstash.com/blog)
+- [Console](https://console.upstash.com)
+- [Discord](https://upstash.com/discord)
