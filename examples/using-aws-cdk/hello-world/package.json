@@ -7,6 +7,6 @@
   "author": "SAM CLI",
   "license": "MIT",
   "dependencies": {
-    "ioredis": "^4.25.0"
+    "ioredis": "^5.3.2"
   }
 }

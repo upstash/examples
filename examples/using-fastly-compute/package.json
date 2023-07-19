@@ -9,11 +9,11 @@
   },
   "devDependencies": {
     "core-js": "^3.31.1",
-    "webpack": "^5.88.1",
+    "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@fastly/js-compute": "^2.5.0",
+    "@fastly/js-compute": "^3.1.1",
     "@upstash/redis": "^1.22.0",
     "flight-path": "^1.0.13"
   },
