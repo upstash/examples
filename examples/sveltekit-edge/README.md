@@ -11,7 +11,7 @@ author: "geoffrich"
 
   <h3 align="center"> Guest book with Sveltekit Edge</h3>
 
-  <p align="center"> 
+  <p align="center">
    Build a guest book using SvelteKit and Upstash Redis, with deployment to Vercel Edge Functions.
   </p>
 </div>

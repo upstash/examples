@@ -1,14 +1,21 @@
 <script lang="ts">
-	import { enhance } from '$lib/enhance';
-	import type { Visit } from '$lib/types';
+	import type { PageData, ActionData } from './$types';
 	import { slide } from 'svelte/transition';
-	export let visited: Visit[];
-	export let current_city: string;
-	export let signed = false;
+	import { enhance } from '$app/forms';
 
-	const cities = visited.map((v) => v.city.split(', '));
-	const countries = [...new Set(cities.map((c) => c[1]))].sort();
+	export let data: PageData;
+	export let form: ActionData;
+
+	let signed = false;
+
+	$: ({ visited, current_city } = data);
+	$: cities = visited.map((v) => v.city.split(', '));
+	$: countries = [...new Set(cities.map((c) => c[1]))].sort();
 </script>
+
+<svelte:head>
+	<title>Todos</title>
+</svelte:head>
 
 <h1>SvelteKit Edge Guest Book</h1>
 
@@ -18,15 +25,7 @@
 	<p>
 		We see you're from {current_city}. Would you like to sign the guest book?
 	</p>
-	<form
-		action="/"
-		method="post"
-		use:enhance={{
-			result: () => {
-				signed = true;
-			}
-		}}
-	>
+	<form action="/" method="post" use:enhance>
 		<button>I was here</button>
 	</form>
 {/if}
