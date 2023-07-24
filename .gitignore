@@ -13,3 +13,6 @@ redis-server
 
 coverage
 .contentlayer
+tsup.config.js
+.dockerignore
+Dockerfile
