@@ -13,9 +13,9 @@ server.listen(8080, () => {
 
 
 const kafka = new Kafka({
-    url: process.env.UPSTASH_KAFKA_REST_URL,
-    username: process.env.UPSTASH_KAFKA_REST_USERNAME
-    password: process.env.UPSTASH_KAFKA_REST_PASSWORD
+    url: process.env.UPSTASH_KAFKA_REST_URL as string,
+    username: process.env.UPSTASH_KAFKA_REST_USERNAME as string,
+    password: process.env.UPSTASH_KAFKA_REST_PASSWORD as string,
 });
 
 
