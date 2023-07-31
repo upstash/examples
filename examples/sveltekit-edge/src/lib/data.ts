@@ -1,16 +1,30 @@
 import { Redis } from "@upstash/redis";
 import type { Visit } from "./types";
+import { CITY_HEADER, COUNTRY_HEADER } from "./constants";
+import redis from "./redis";
 
 const set_name = "visitors";
 
+export function get_city(request: Request) {
+  const city = request.headers.get(CITY_HEADER) ?? "unknown city";
+  const country = get_country_name(request.headers.get(COUNTRY_HEADER));
+  return `${city}, ${country}`;
+}
+
+const display_names = new Intl.DisplayNames(["en"], { type: "region" });
+export function get_country_name(countryCode: string | null) {
+  if (countryCode) {
+    return display_names.of(countryCode);
+  }
+  return "unknown country";
+}
+
 export async function get_visitors(): Promise<Visit[]> {
-  const redis = Redis.fromEnv();
   const visitors = await redis.zrange<string[]>(set_name, 0, -1, { withScores: true });
   return adapt_visitors(visitors);
 }
 
 export async function add_visitor(city: string) {
-  const redis = Redis.fromEnv();
   await redis.zincrby(set_name, 1, city);
 }
 

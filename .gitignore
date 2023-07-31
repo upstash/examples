@@ -2,7 +2,7 @@ node_modules
 dist
 .env
 redis-server
-
+.DS_Store
 **/yarn.lock
 **/package-lock.json
 **/pnpm-lock.yaml
