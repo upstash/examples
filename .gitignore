@@ -1,9 +1,17 @@
 node_modules
 dist
+
 .env
+
 .env.local
+
 .eslintrc.json
+
+.dockerignore
+
 Dockerfile
+
+.DS_Store
 
 redis-server
 
@@ -18,3 +26,5 @@ redis-server
 coverage
 .contentlayer
 .DS_Store
+
+
