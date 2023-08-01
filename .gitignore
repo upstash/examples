@@ -2,6 +2,7 @@ node_modules
 dist
 .env
 redis-server
+.eslintrc.json
 
 **/yarn.lock
 **/package-lock.json
@@ -13,3 +14,4 @@ redis-server
 
 coverage
 .contentlayer
+.DS_Store
