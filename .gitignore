@@ -3,6 +3,8 @@ dist
 .env
 redis-server
 .eslintrc.json
+.dockerignore
+Dockerfile
 
 **/yarn.lock
 **/package-lock.json
