@@ -1,6 +1,10 @@
 node_modules
 dist
 .env
+.env.local
+.eslintrc.json
+Dockerfile
+
 redis-server
 
 **/yarn.lock
@@ -13,3 +17,4 @@ redis-server
 
 coverage
 .contentlayer
+.DS_Store
