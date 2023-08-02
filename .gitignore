@@ -3,6 +3,14 @@ dist
 .env
 redis-server
 
+Dockerfile
+
+.dockerignore
+
+.env.local
+
+tsup.config.json
+
 **/yarn.lock
 **/package-lock.json
 **/pnpm-lock.yaml
@@ -13,3 +21,5 @@ redis-server
 
 coverage
 .contentlayer
+
+.DS_Store

@@ -11,15 +11,13 @@ server.listen(8080, () => {
     console.log("Server is running on port 6060");
 });
 
-
 const kafka = new Kafka({
     url: process.env.UPSTASH_KAFKA_REST_URL as string,
     username: process.env.UPSTASH_KAFKA_REST_USERNAME as string,
     password: process.env.UPSTASH_KAFKA_REST_PASSWORD as string,
 });
 
-
-const redis = Redis.fromEnv()
+const redis = Redis.fromEnv();
 
 const consumer = kafka.consumer();
 
@@ -58,10 +56,9 @@ run().catch((error) => {
 });
 
 wss.on("connection", async (connection, req) => {
-
     clients.add(connection);
 
-    console.log(`New client connected:`);
+    console.log("New client connected:");
 
     connection.on("message", async (message) => {
         const jsonMessage = message.toString();
