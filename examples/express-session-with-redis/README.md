@@ -1,5 +1,5 @@
 ---
-title: Leaderboard with Cloudflare and Redis
+title: Express Session with Serverless Redis
 products: ["redis"]
 stack: ["Node.js", "Express"]
 use_cases: ["Session management", "Page views", "Counting"]
