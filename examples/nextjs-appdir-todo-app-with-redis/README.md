@@ -1,7 +1,7 @@
 ---
 title: Next.js Todo App with Redis USING APP DIRECTORY
 products: ["redis"]
-stack: ["Next.js"]
+stack: ["Next.js", "Typescript"]
 use_cases: ["Efficiently manage your Task"]
 author: "trace2798"
 ---
