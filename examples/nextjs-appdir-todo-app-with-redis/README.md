@@ -17,7 +17,7 @@ author: "trace2798"
 ### Cloning the repository
 
 ```shell
-git clone
+git clone https://github.com/upstash/examples.git
 ```
 
 ### Install packages
