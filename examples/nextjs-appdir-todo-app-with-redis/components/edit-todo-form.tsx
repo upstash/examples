@@ -73,21 +73,6 @@ export const EditTodo: React.FC<EditTodoFormProps> = ({ id, value }) => {
     }
   };
 
-  const handleDeleteProject = async () => {
-    setIsDeleting(true);
-    try {
-      if (!id) {
-        return "NO ID TO DELETE";
-      }
-      await axios.delete(`/api/todo/${id}`);
-      router.push("/");
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setIsDeleting(false);
-    }
-  };
-
   const handleIsStatusChange = (checked: boolean) => {
     form.setValue("status", checked);
   };
