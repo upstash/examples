@@ -22,7 +22,7 @@ Welcome! This example showcases an interactive messaging platform that harnesses
 
 To see the demo version of this project, please navigate to [here](https://next-message.fly.dev/).
 
-You can also build your own demo following the [blogpost of this project](upstash.com/blog/author/fahreddin/next-chatapp-with-kafka). It describes the development and deployment process in detail.
+You can also build your own demo following the [blogpost of this project](https://upstash.com/blog/next-chatapp-with-kafka). It describes the development and deployment process in detail.
 
 ## Project Overview
 
@@ -55,7 +55,7 @@ Upstash Redis: The application utilizes Upstash Redis to store message history. 
 
 ### Deployment
 
-The current version of this example is deployed to Fly.io. You can checkout the [blogpost](upstash.com/blog/author/fahreddin/next-chatapp-with-kafka) to learn about the deployment process.
+The current version of this example is deployed to Fly.io. You can check out the [blogpost](https://upstash.com/blog/next-chatapp-with-kafka) to learn about the deployment process.
 
 ## Learn More
 
