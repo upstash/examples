@@ -8,6 +8,7 @@ export const Example = defineDocumentType(() => ({
   fields: {
     title: { type: "string", required: true },
     blog_url: { type: "string", required: false },
+    preview_url: { type: "string", required: false },
     products: { type: "list", of: { type: "enum", options: ["redis", "kafka", "qstash"] }, required: true },
     stack: { type: "list", of: { type: "string" }, required: true },
     use_cases: { type: "list", of: { type: "string" }, required: true },
