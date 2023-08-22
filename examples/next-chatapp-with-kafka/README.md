@@ -22,7 +22,7 @@ Welcome! This example showcases an interactive messaging platform that harnesses
 
 To see the demo version of this project, please navigate to [here](https://next-message.fly.dev/).
 
-You can also build your own demo following the [blogpost of this project](upstash.com/blog/author/fahreddin/next-chatapp-with-kafka). It describes the development and deployment process in detail.
+You can also build your own demo following the [blogpost of this project](https://upstash.com/blog/author/fahreddin/next-chatapp-with-kafka). It describes the development and deployment process in detail.
 
 ## Project Overview
 
@@ -40,14 +40,14 @@ The chat room page enables real-time communication between clients. When users c
 
 The chat application's logic is as follows:
 
--   Users create multiple clients on the index page, each with a unique username.
--   Clicking on a client's username opens a new tab with a separate client and a unique path.
--   Each client establishes a WebSocket connection to a message server.
--   Messages sent from a client are directed to the associated message server via WebSocket.
--   Message servers handle the message traffic by routing messages to a Kafka Broker.
--   Each message server runs a Node.js thread to manage incoming messages.
--   Consumed messages from Kafka are sent to clients through WebSocket connections.
--   The react-use-websocket library is used to consume incoming messages on the client side.
+- Users create multiple clients on the index page, each with a unique username.
+- Clicking on a client's username opens a new tab with a separate client and a unique path.
+- Each client establishes a WebSocket connection to a message server.
+- Messages sent from a client are directed to the associated message server via WebSocket.
+- Message servers handle the message traffic by routing messages to a Kafka Broker.
+- Each message server runs a Node.js thread to manage incoming messages.
+- Consumed messages from Kafka are sent to clients through WebSocket connections.
+- The react-use-websocket library is used to consume incoming messages on the client side.
 
 ### Data Storage
 
@@ -61,8 +61,8 @@ The current version of this example is deployed to Fly.io. You can checkout the 
 
 To learn more about Upstash and its services, check out the following resources:
 
--   [Documentation](https://docs.upstash.com)
--   [Website](https://upstash.com)
--   [Blog](https://upstash.com/blog)
--   [Console](https://console.upstash.com)
--   [Discord](https://upstash.com/discord)
+- [Documentation](https://docs.upstash.com)
+- [Website](https://upstash.com)
+- [Blog](https://upstash.com/blog)
+- [Console](https://console.upstash.com)
+- [Discord](https://upstash.com/discord)
