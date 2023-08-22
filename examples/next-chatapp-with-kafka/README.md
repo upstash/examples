@@ -22,7 +22,7 @@ Welcome! This example showcases an interactive messaging platform that harnesses
 
 To see the demo version of this project, please navigate to [here](https://next-message.fly.dev/).
 
-You can also build your own demo following the [blogpost of this project](https://upstash.com/blog/author/fahreddin/next-chatapp-with-kafka). It describes the development and deployment process in detail.
+You can also build your own demo following the [blogpost of this project](https://upstash.com/blog/next-chatapp-with-kafka). It describes the development and deployment process in detail.
 
 ## Project Overview
 
