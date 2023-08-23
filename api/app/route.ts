@@ -3,10 +3,23 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "edge";
 
+type exampleResponseObject = {
+  id: string;
+  title: string;
+  products: string[];
+  stack: string[];
+  useCases: string[];
+  body: string;
+  githubUrl: string;
+  author: string;
+  previewUrl?: string;
+  blogUrl?: string;
+};
+
 export function GET(req: NextRequest) {
   return NextResponse.json(
     allExamples.map((e) => {
-      var exampleItem = {
+      var exampleObject: exampleResponseObject = {
         id: e._id,
         title: e.title,
         products: e.products,
@@ -15,17 +28,17 @@ export function GET(req: NextRequest) {
         body: e.body.raw,
         githubUrl: e.github_url,
         author: e.author,
-      }
-      
+      };
+
       if (e.preview_url) {
-        exampleItem.previewUrl = e.preview_url
+        exampleObject.previewUrl = e.preview_url;
       }
 
       if (e.blog_url) {
-        exampleItem.blogUrl = e.blog_url
+        exampleObject.blogUrl = e.blog_url;
       }
 
-      return exampleItem;
-    }),
+      return exampleObject;
+    })
   );
 }
