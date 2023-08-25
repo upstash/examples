@@ -19,7 +19,7 @@ type exampleResponseObject = {
 export function GET(req: NextRequest) {
   return NextResponse.json(
     allExamples.map((e) => {
-      let exampleObject: exampleResponseObject = {
+      let exampleObject: ExampleResponseObject = {
         id: e._id,
         title: e.title,
         products: e.products,
