@@ -1,4 +1,5 @@
 import FeedbackFormEmail from "@/email/create-email-from-form";
+import ResponseBackEmail from "@/email/response-back";
 import { rateLimit } from "@/lib/rate-limit";
 import { NextRequest, NextResponse } from "next/server";
 import React from "react";
@@ -30,7 +31,7 @@ export async function POST(req: NextRequest) {
     }
 
     await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+      from: "Contact Form <onboarding@upstash.app>",
       to: "YOUR_EMAIL_WITH_WHICH_YOU_HAVE_CREATED_THE_ACCOUNT_IN_RESEND[If you are using the free plan]",
       subject: `${name} send you this message.`,
       reply_to: email,
@@ -39,6 +40,15 @@ export async function POST(req: NextRequest) {
         email: email,
         name: name,
         number: number,
+      }),
+    });
+
+    await resend.emails.send({
+      from: "Upstash Team <feedback@upstash.app>",
+      to: `${email}`,
+      subject: "Submission Confirmation From Upstash Team",
+      react: React.createElement(ResponseBackEmail, {
+        name: name,
       }),
     });
     // If you are using the free plan from resend labs. Make sure the value for "to" field is your own email address with which you created the account in resend.
