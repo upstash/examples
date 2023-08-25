@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "edge";
 
-type exampleResponseObject = {
+type ExampleResponseObject = {
   id: string;
   title: string;
   products: string[];
