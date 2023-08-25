@@ -3,6 +3,8 @@ title: Chat Application with Next.js and Upstash Kafka
 products: ["redis", "kafka"]
 stack: ["Next.js", "WebSocket", "Fly.io", "TypeScript"]
 use_cases: ["Chat Application"]
+preview_url: "https://next-chatapp-with-kafka.fly.dev/"
+blog_url: "https://upstash.com/blog/next-chatapp-with-kafka"
 author: "fahreddinozcan"
 ---
 
