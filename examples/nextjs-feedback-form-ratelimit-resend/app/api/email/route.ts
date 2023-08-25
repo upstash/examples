@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
 
     await resend.emails.send({
       from: "Contact Form <onboarding@upstash.app>",
-      to: "YOUR_EMAIL_WITH_WHICH_YOU_HAVE_CREATED_THE_ACCOUNT_IN_RESEND[If you are using the free plan]",
+      to: "YOUR_EMAIL_WITH_WHICH_YOU_HAVE_CREATED_THE_ACCOUNT_IN_RESEND[If you are using the free plan and do not have verified domain]",
       subject: `${name} send you this message.`,
       reply_to: email,
       react: React.createElement(FeedbackFormEmail, {
@@ -51,13 +51,6 @@ export async function POST(req: NextRequest) {
         name: name,
       }),
     });
-    // If you are using the free plan from resend labs. Make sure the value for "to" field is your own email address with which you created the account in resend.
-    // Otherwise you will get a error with statusCode 403
-    // {
-    //     name: 'invalid_to_address',
-    //     message: 'You can only send testing emails to your own email address (your resend account email will be visible here).',
-    //     statusCode: 403
-    //   }
     return NextResponse.json("SUBMITTED");
   } catch (error) {
     return new NextResponse("Internal error", { status: 500 });
