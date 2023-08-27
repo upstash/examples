@@ -1,0 +1,1 @@
+export { default as SplitPage } from './SplitPage.svelte'
