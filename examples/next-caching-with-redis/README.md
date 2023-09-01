@@ -3,6 +3,7 @@ title: Caching for Next.js App with Redis
 products: ["redis"]
 stack: ["Next.js"]
 use_cases: ["Caching", "Performance improvement"]
+platform: ["Vercel"]
 author: "ademilter"
 ---
 

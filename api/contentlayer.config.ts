@@ -10,8 +10,52 @@ export const Example = defineDocumentType(() => ({
     blog_url: { type: "string", required: false },
     preview_url: { type: "string", required: false },
     products: { type: "list", of: { type: "enum", options: ["redis", "kafka", "qstash"] }, required: true },
-    stack: { type: "list", of: { type: "string" }, required: true },
-    use_cases: { type: "list", of: { type: "string" }, required: true },
+    stack: {
+      type: "list", of: {
+        type: "enum", options: [
+          "Next.js",
+          "Remix",
+          "Node.js",
+          "Serverless",
+
+
+        ]
+      }, required: true
+    },
+    platforms: {
+      type: "list", of: {
+        type: "enum", options: [
+          "AWS",
+          "Cloudflare",
+          "Deno Deploy",
+          "fly.io",
+          "GCP",
+          "Koyeb",
+          "Netlify",
+          "Vercel",
+        ]
+      }, required: true
+    },
+    languages: {
+      type: "list", of: {
+        type: "enum", options: [
+          "ts",
+          "js",
+          "rs",
+          "go",
+          "py"
+        ]
+      }, required: true
+    },
+    use_cases: {
+      type: "list", of: {
+        type: "enum", options: [
+          "Cache",
+          "Ratelimit",
+
+        ]
+      }, required: true
+    },
     draft: { type: "boolean" },
     author: { type: "string", required: true },
   },
@@ -19,7 +63,7 @@ export const Example = defineDocumentType(() => ({
     github_url: {
       type: "string",
       resolve: (doc: any) => `https://github.com/upstash/examples/blob/main/examples/${doc._raw.flattenedPath}.md`,
-    }, //   https://github.com/upstash/examples/blob/main/examples/redis-with-nextjs/README.md
+    },
   },
 }));
 
@@ -28,3 +72,4 @@ export default makeSource({
   contentDirExclude: ["**/node_modules", "."],
   documentTypes: [Example],
 });
+

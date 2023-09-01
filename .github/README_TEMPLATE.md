@@ -1,8 +1,9 @@
 ---
 title: The name of the example
 products: ["redis", "kafka", "qstash"]
-stack: ["Next.js", "Vercel", "Supabase", "Deno"]
+stack: ["Next.js",  "Deno"]
 use_cases: ["Caching", "Ratelimiting"]
+platforms: ["Vercel"]
 author: "your_github_username"
 ---
 

@@ -1,8 +1,10 @@
 ---
 title: Autocomplete API with Serverless Redis
 products: ["redis"]
-stack: ["Node.js","Serverless"]
+stack: ["Node.js"]
+languages: ["Typescript"]
 use_cases: ["Autocomplete"]
+platforms: ["Vercel"]
 author: "noahfschr"
 ---
 
