@@ -1,11 +1,12 @@
 ---
 title: Netlify Edge with Redis
 products: ["redis"]
-stack: ["Node.js", "Netlify"]
+stack: ["Node.js"]
+platforms: ["Netlify"]
+languages: ["js"]
 use_cases: ["Edge"]
 author: "noahfschr"
 ---
-
 
 <br />
 <div align="center">

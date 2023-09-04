@@ -1,11 +1,11 @@
 ---
 title: Session Management on Google Cloud Run with Serverless Redis
 products: ["redis"]
-stack: ["Node.js","Google Cloud Run"]
-use_cases: ["Session management"]
+stack: ["Node.js"]
+platforms: ["GCP"]
+use_cases: ["Session Management"]
 author: "enesakar"
 ---
-
 
 <br />
 <div align="center">
@@ -17,9 +17,8 @@ author: "enesakar"
   </p>
 </div>
 
-
-
 See the [tutorial](https://docs.upstash.com/tutorials/cloud_run_sessions) for details.
+
 ### Learn More
 
 To learn more about Upstash and its services, check out the following resources:

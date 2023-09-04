@@ -1,11 +1,11 @@
 ---
 title: Rate Limiting OpenAI Requests
-products: ["redis", "rate limit"]
-stack: ["Python", "OpenAI", "Flask"]
-use_cases: ["Rate limiting", "Text completion"]
+products: ["redis"]
+stack: ["Flask"]
+use_cases: ["Ratelimit", "OpenAI"]
+languages: ["py"]
 author: "fahreddinozcan"
 ---
-
 
 <br />
 <div align="center">
@@ -18,7 +18,6 @@ author: "fahreddinozcan"
   </p>
 </div>
 
-
 ## Getting Started
 
 ### Prerequisites
@@ -29,6 +28,7 @@ If you don't have a database ready, you can learn how to do it [here](https://do
 ### Quickstart
 
 1. Clone the repo
+
    ```sh
    $ git clone https://github.com/upstash/examples.git
    $ cd examples/ratelimiting-python-openai
@@ -38,15 +38,14 @@ If you don't have a database ready, you can learn how to do it [here](https://do
    ```sh
    $ pip install -r requirements.txt
    ```
-   
 3. Create the environment variables
    ```sh
    $ export OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
    $ export UPSTASH_REDIS_REST_URL=<YOUR_UPSTASH_REDIS_REST_URL>
    $ export UPSTASH_REDIS_REST_TOKEN=<YOUR_UPSTASH_REDIS_REST_TOKEN>
    ```
-   
 4. Run the Flask server
+
    ```sh
    $ cd api
    $ flask --app server run

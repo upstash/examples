@@ -1,15 +1,13 @@
 ---
 title: Express Session with Serverless Redis
 products: ["redis"]
-stack: ["Node.js", "Express"]
-use_cases: ["Session management", "Page views", "Counting"]
+stack: ["Node.js"]
+use_cases: ["Session Management"]
 author: "noahfschr"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Express Session with Serverless Redis</h3>
 

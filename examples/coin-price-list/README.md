@@ -1,15 +1,13 @@
 ---
-title:  Backendless Coin Price List with GraphQL
+title: Backendless Coin Price List with GraphQL
 products: ["redis"]
-stack: ["Node.js","GraphQL"]
-use_cases: ["Coin prices"]
+stack: ["Node.js"]
+use_cases: ["GraphQL"]
 author: "noahfschr"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Backendless Coin Price List with GraphQL</h3>
 
@@ -18,7 +16,6 @@ author: "noahfschr"
 
   </p>
 </div>
-
 
 See the [tutorial](https://docs.upstash.com/tutorials/coin_price_list) for details.
 

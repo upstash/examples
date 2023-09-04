@@ -9,22 +9,37 @@ export const Example = defineDocumentType(() => ({
     title: { type: "string", required: true },
     blog_url: { type: "string", required: false },
     preview_url: { type: "string", required: false },
-    products: { type: "list", of: { type: "enum", options: ["redis", "kafka", "qstash"] }, required: true },
+    products: {
+      type: "list",
+      of: { type: "enum", options: ["redis", "kafka", "qstash"] },
+      required: true,
+    },
     stack: {
-      type: "list", of: {
-        type: "enum", options: [
+      type: "list",
+      of: {
+        type: "enum",
+        options: [
           "Next.js",
-          "Remix",
           "Node.js",
+          "React",
+          "Svelte",
+          "Remix",
+          "React Native",
           "Serverless",
-
-
-        ]
-      }, required: true
+          "WebSocket",
+          "Flask",
+          "Nuxt.js",
+          "Vue.js",
+          "Redisson",
+        ],
+      },
+      required: true,
     },
     platforms: {
-      type: "list", of: {
-        type: "enum", options: [
+      type: "list",
+      of: {
+        type: "enum",
+        options: [
           "AWS",
           "Cloudflare",
           "Deno Deploy",
@@ -33,28 +48,41 @@ export const Example = defineDocumentType(() => ({
           "Koyeb",
           "Netlify",
           "Vercel",
-        ]
-      }, required: true
+        ],
+      },
+      required: false,
     },
     languages: {
-      type: "list", of: {
-        type: "enum", options: [
-          "ts",
-          "js",
-          "rs",
-          "go",
-          "py"
-        ]
-      }, required: true
+      type: "list",
+      of: {
+        type: "enum",
+        options: ["ts", "js", "rs", "go", "py", "java"],
+      },
+      required: true,
     },
     use_cases: {
-      type: "list", of: {
-        type: "enum", options: [
+      type: "list",
+      of: {
+        type: "enum",
+        options: [
           "Cache",
           "Ratelimit",
-
-        ]
-      }, required: true
+          "Data Storage",
+          "Autocomplete",
+          "Queue",
+          "Counter",
+          "State Store",
+          "Session Management",
+          "OpenAI",
+          "Analytics",
+          "Leaderboard",
+          "Logging",
+          "Authentication",
+          "Web3",
+          "Data Streaming",
+        ],
+      },
+      required: true,
     },
     draft: { type: "boolean" },
     author: { type: "string", required: true },
@@ -62,7 +90,8 @@ export const Example = defineDocumentType(() => ({
   computedFields: {
     github_url: {
       type: "string",
-      resolve: (doc: any) => `https://github.com/upstash/examples/blob/main/examples/${doc._raw.flattenedPath}.md`,
+      resolve: (doc: any) =>
+        `https://github.com/upstash/examples/blob/main/examples/${doc._raw.flattenedPath}.md`,
     },
   },
 }));
@@ -72,4 +101,3 @@ export default makeSource({
   contentDirExclude: ["**/node_modules", "."],
   documentTypes: [Example],
 });
-

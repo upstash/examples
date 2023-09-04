@@ -1,8 +1,9 @@
 ---
 title: Next + Netlify Starter
 products: ["redis"]
-stack: ["Next.js", "Netlify", "Netlify Functions"]
-use_cases: ["Introduction", "Next.js"]
+stack: ["Next.js"]
+use_cases: ["Analytics"]
+languages: ["js"]
 platforms: ["Netlify"]
 author: "chronark"
 ---

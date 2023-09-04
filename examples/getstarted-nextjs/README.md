@@ -1,7 +1,7 @@
 ---
 title: Get Started with Next.js and Upstash Kafka
 products: ["redis", "kafka"]
-stack: ["Next.js", "Edge functions"]
+stack: ["Next.js"]
 use_cases: ["Introduction", "Edge"]
 author: "enesakar"
 ---

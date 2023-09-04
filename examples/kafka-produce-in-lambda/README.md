@@ -1,22 +1,24 @@
 ---
 title: Kafka in AWS Lambda
 products: ["kafka"]
-stack: ["Node.js", "AWS Lambda"]
-use_cases: ["Introduction", "Lambda functions"]
+stack: ["Node.js"]
+platforms: ["AWS"]
+languages: ["js"]
+use_cases: ["Introduction"]
 author: "enesakar"
 ---
 
 <br />
 <div align="center">
 
-  <h3 align="center">Kafka in Cloudflare Workers</h3>
+  <h3 align="center">Kafka in AWS Lambda</h3>
 
   <p align="center">
         Use Serverless Kafka to Produce Events in AWS Lambda
   </p>
 </div>
 
-In this tutorial, we will produce events to Upstash Kafka from an AWS Lambda function.  
+In this tutorial, we will produce events to Upstash Kafka from an AWS Lambda function.
 
 ### Learn More
 

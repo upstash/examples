@@ -1,15 +1,16 @@
 ---
 title: Ratelimiting python serverless functions on Vercel
 products: ["redis"]
-stack: ["Python", "Vercel"]
-use_cases: ["Rate limiting"]
+stack: ["Flask"]
+languages: ["py"]
+platforms: ["Vercel"]
+use_cases: ["Ratelimit", "OpenAI"]
+preview_url: "https://examples-ratelimiting-python-vercel.vercel.app"
 author: "chronark"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Ratelimiting python serverless functions on Vercel</h3>
 
@@ -19,14 +20,9 @@ author: "chronark"
   </p>
 </div>
 
-
-
-
 ## Demo
 
-[Demo on Vercel](https://examples-ratelimiting-python-vercel.vercel.app )
-
-
+[Demo on Vercel](https://examples-ratelimiting-python-vercel.vercel.app)
 
 ## Getting Started
 
@@ -37,13 +33,13 @@ If you don't have a database ready, you can learn how to do it [here](https://do
 
 ### Quickstart
 
-
 1. Clone the repo
    ```sh
    $ git clone https://github.com/upstash/examples.git
    $ cd examples/ratelimiting-python-vercel
    ```
 2. Create the project on Vercel
+
    ```sh
    $ vercel
    ```
@@ -54,6 +50,7 @@ If you don't have a database ready, you can learn how to do it [here](https://do
    UPSTASH_REDIS_REST_TOKEN=""
    ```
 4. Deploy to production
+
    ```sh
    $ vercel --prod
    ```

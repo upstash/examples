@@ -2,7 +2,9 @@
 title: Build your own survey app with Upstash Redis only
 products: ["redis"]
 stack: ["Next.js"]
-use_cases: ["Survey app"]
+languages: ["ts"]
+use_cases: ["Data Storage"]
+blog_url: "https://blog.upstash.com/survey-serverless-redis"
 author: "chronark"
 ---
 
@@ -16,11 +18,9 @@ author: "chronark"
   </p>
 </div>
 
-
 This example showcases how to build a Next.js app that uses Upstash Redis as it's only database.
 
 See the [blog post](https://blog.upstash.com/survey-serverless-redis) for details.
-
 
 ### Learn More
 
@@ -31,4 +31,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-

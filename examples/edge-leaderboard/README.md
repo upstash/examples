@@ -1,8 +1,9 @@
 ---
 title: Leaderboard with Cloudflare and Redis
 products: ["redis"]
-stack: ["Node.js", "Cloudflare Workers"]
-use_cases: ["Leaderboard", "Edge"]
+stack: ["Node.js"]
+platforms: ["Cloudflare"]
+use_cases: ["Leaderboard"]
 author: "noahfschr"
 ---
 

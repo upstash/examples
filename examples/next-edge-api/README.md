@@ -2,7 +2,8 @@
 title: Next.js API
 products: ["redis"]
 stack: ["Next.js"]
-use_cases: ["Edge"]
+languages: ["ts"]
+use_cases: ["State Store"]
 author: "enesakar"
 ---
 

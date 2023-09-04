@@ -1,3 +1,13 @@
+---
+title: Svelte Example
+products: ["redis"]
+stack: ["Sveltekit"]
+platforms: ["Vercel"]
+languages: ['ts']
+use_cases: ["State Store", "Session Management"]
+author: "geoffrich"
+---
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).

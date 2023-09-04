@@ -1,8 +1,10 @@
 ---
 title: Guest book with Sveltekit Edge
 products: ["redis"]
-stack: ["Sveltekit Edge", "Edge functions", "Vercel"]
-use_cases: ["Guest book", "Edge"]
+stack: ["Sveltekit"]
+platforms: ["Vercel"]
+languages: ['ts']
+use_cases: ["State Store"]
 author: "geoffrich"
 ---
 

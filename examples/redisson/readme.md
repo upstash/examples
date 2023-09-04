@@ -1,8 +1,9 @@
 ---
 title: Redisson
 products: ["redis"]
-stack: ["Java", "Redisson"]
-use_cases: ["Introduction"]
+stack: ["Redisson"]
+languages: ["java"]
+use_cases: ["Data Storage"]
 author: "noahfschr"
 ---
 
@@ -29,4 +30,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-
