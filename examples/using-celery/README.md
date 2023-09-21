@@ -1,11 +1,11 @@
 ---
 title: Job Processor with Celery
 products: ["redis"]
-stack: ["Python", "Flask","Celery"]
-use_cases: ["Background jobs", "Result storage"]
+languages: ["py"]
+stack: ["Flask"]
+use_cases: ["Queue"]
 author: "burak-upstash"
 ---
-
 
 <br />
 <div align="center">
@@ -19,6 +19,7 @@ author: "burak-upstash"
 ![celery](https://github.com/upstash/examples/blob/main/examples/using-celery/static/celery.png?raw=true)
 
 ## A simple job processing scenario, showcasing a Flask and Celery by using Upstash Redis.
+
 You have a server, where you process customer's jobs for them: apply some training for their models, apply image, text processing etc.
 You can reduce the server load and keep the responsiveness by using Celery: Allowing you to run processes in the background.
 
@@ -29,19 +30,26 @@ Since Upstash Redis can also be used as a durable storage, we can and have confi
 Once a request is made to `/result` with `id` parameter, corresponding result is returned from the backend database.
 
 ### Install Dependencies
+
 `pip install -r requirements.txt`
+
 ### Run Flask Server
+
 `flask --app server run`
+
 ### Start Celery Worker
+
 `celery -A tasks worker --loglevel=INFO`
 
 ### Run a Job
-` curl -X POST http://localhost:5000/run -H 'Content-Type: application/json' -d '{"id":"<id>", "email":"a@b.com", "difficulty":"hard"}' `
+
+`curl -X POST http://localhost:5000/run -H 'Content-Type: application/json' -d '{"id":"<id>", "email":"a@b.com", "difficulty":"hard"}'`
 
 ### Get Results of a Job
+
 Once a notification is sent to `/notify`, get the result:
 
-` curl -X POST http://localhost:5000/result -H 'Content-Type: application/json' -d '{"id":"<id>"}' `
+`curl -X POST http://localhost:5000/result -H 'Content-Type: application/json' -d '{"id":"<id>"}'`
 
 ### Learn More
 

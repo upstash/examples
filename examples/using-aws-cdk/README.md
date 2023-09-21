@@ -1,8 +1,10 @@
 ---
 title: Using AWS CDK with Redis
 products: ["redis"]
-stack: ["AWS CDK", "Node.js"]
-use_cases: ["Introduction"]
+languages: ["js"]
+stack: ["Node.js"]
+platforms: ["AWS"]
+use_cases: ["Data Storage"]
 author: "noahfschr"
 ---
 
@@ -33,8 +35,8 @@ The application is the same Hello World application created by SAM witth some ad
 
 You need the following tools.
 
-* AWS CDK - [Install the SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
-* Node.js - [Install Node.js +12](https://nodejs.org/en/), including the NPM package management tool.
+- AWS CDK - [Install the SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
+- Node.js - [Install Node.js +12](https://nodejs.org/en/), including the NPM package management tool.
 
 First, you'll need to enter the `hello-world` folder and install all dependencies in your machine.
 
@@ -104,4 +106,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-
