@@ -2,7 +2,7 @@
 title: Next.js with Redis
 products: ["redis"]
 stack: ["Next.js"]
-use_cases: ["State store"]
+use_cases: ["State Store"]
 languages: ["js"]
 author: "enesakar"
 ---

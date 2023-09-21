@@ -1,6 +1,7 @@
 ---
 title: Leaderboard with Cloudflare and Redis
 products: ["redis"]
+languages: ["js"]
 stack: ["Node.js"]
 platforms: ["Cloudflare"]
 use_cases: ["Leaderboard"]

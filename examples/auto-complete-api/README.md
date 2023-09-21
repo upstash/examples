@@ -5,13 +5,12 @@ stack: ["Node.js"]
 languages: ["Typescript"]
 use_cases: ["Autocomplete"]
 platforms: ["Vercel"]
+preview_url: "https://auto-complete-example.vercel.app/"
 author: "noahfschr"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Autocomplete API with Serverless Redis</h3>
 
@@ -20,7 +19,6 @@ author: "noahfschr"
 
   </p>
 </div>
-
 
 ## Autocomplete API with Serverless Redis
 

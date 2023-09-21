@@ -1,6 +1,7 @@
 ---
 title: Session Management on Google Cloud Run with Serverless Redis
 products: ["redis"]
+languages: ["js"]
 stack: ["Node.js"]
 platforms: ["GCP"]
 use_cases: ["Session Management"]

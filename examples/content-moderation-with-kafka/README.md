@@ -1,8 +1,10 @@
 ---
 title: Content Moderation with Kafka
 products: ["kafka", "redis"]
-stack: ["Next.js", "AWS Lambda", "Vercel"]
-use_cases: ["Content moderation"]
+platforms: ["Vercel", "AWS"]
+languages: ["js"]
+stack: ["Next.js"]
+use_cases: ["Data Storage"]
 author: "enesakar"
 ---
 

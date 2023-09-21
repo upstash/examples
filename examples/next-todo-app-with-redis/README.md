@@ -2,6 +2,7 @@
 title: Next.js Todo App with Redis
 products: ["redis"]
 stack: ["Next.js"]
+languages: ["js"]
 use_cases: ["Data Storage"]
 platforms: ["Vercel"]
 preview_url: "https://next-todo-app-with-redis.vercel.app/"

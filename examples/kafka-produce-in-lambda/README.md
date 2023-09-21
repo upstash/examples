@@ -4,7 +4,7 @@ products: ["kafka"]
 stack: ["Node.js"]
 platforms: ["AWS"]
 languages: ["js"]
-use_cases: ["Introduction"]
+use_cases: ["Data Streaming"]
 author: "enesakar"
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: Vanilla JavaScript with Redis
 products: ["redis"]
-stack: ["Javascript"]
+stack: ["Node.js"]
+languages: ["js"]
 use_cases: ["State Store"]
 author: "ademilter"
 ---

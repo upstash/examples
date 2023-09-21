@@ -1,6 +1,7 @@
 ---
 title: Express Session with Serverless Redis
 products: ["redis"]
+languages: ["js"]
 stack: ["Node.js"]
 use_cases: ["Session Management"]
 author: "noahfschr"

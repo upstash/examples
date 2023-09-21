@@ -1,6 +1,7 @@
 ---
 title: Using Bull with Upstash
 products: ["redis"]
+languages: ["js"]
 stack: ["Node.js"]
 use_cases: ["Queue"]
 author: "noahfschr"

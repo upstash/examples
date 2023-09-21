@@ -1,8 +1,10 @@
 ---
 title: Get Started with Next.js and Upstash Kafka
 products: ["redis", "kafka"]
+languages: ["js"]
+platforms: ["Vercel"]
 stack: ["Next.js"]
-use_cases: ["Introduction", "Edge"]
+use_cases: ["Data Storage", "Data Streaming"]
 author: "enesakar"
 ---
 

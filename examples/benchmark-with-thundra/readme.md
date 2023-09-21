@@ -2,8 +2,9 @@
 title: Benchmark Your Serverless Database with Thundra
 products: ["redis"]
 stack: ["Node.js"]
+languages: ["js"]
 platforms: ["AWS"]
-use_cases: ["Benchmark"]
+use_cases: ["State Store"]
 author: "enesakar"
 ---
 

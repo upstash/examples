@@ -4,7 +4,7 @@ products: ["redis"]
 stack: ["Node.js"]
 platforms: ["Netlify"]
 languages: ["js"]
-use_cases: ["Edge"]
+use_cases: ["State Store"]
 author: "noahfschr"
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: Github Kafka Connect
 products: ["redis", "kafka"]
-stack: ["Node.js", "Github"]
-use_cases: ["Introduction", "Authorization"]
+languages: ["js"]
+stack: ["Node.js"]
+use_cases: ["Data Streaming"]
 author: "enesakar"
 ---
 

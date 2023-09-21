@@ -1,6 +1,7 @@
 ---
 title: Edge Analytics with Cloudflare Workers
 products: ["redis"]
+languages: ["js"]
 stack: ["Node.js"]
 platforms: ["Cloudflare"]
 use_cases: ["Analytics"]
