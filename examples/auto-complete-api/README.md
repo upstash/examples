@@ -2,7 +2,7 @@
 title: Autocomplete API with Serverless Redis
 products: ["redis"]
 stack: ["Node.js"]
-languages: ["Typescript"]
+languages: ["ts"]
 use_cases: ["Autocomplete"]
 platforms: ["Vercel"]
 preview_url: "https://auto-complete-example.vercel.app/"

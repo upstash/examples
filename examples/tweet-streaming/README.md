@@ -1,8 +1,8 @@
 ---
 title: Streaming Tweets to Kafka
 products: ["kafka"]
-stack: ["Java"]
-languages: ["Java"]
+stack: ["WebSocket"]
+languages: ["java"]
 use_cases: ["Data Streaming"]
 author: "enesakar"
 ---
