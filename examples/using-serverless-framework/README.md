@@ -1,8 +1,9 @@
 ---
 title: Deploy with Serverless Framework
 products: ["redis"]
+languages: ["js"]
 stack: ["Node.js", "Serverless"]
-use_cases: ["Introduction", "Deployment"]
+use_cases: ["State Store"]
 author: "dependabot"
 ---
 

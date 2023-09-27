@@ -1,8 +1,10 @@
 ---
 title: Upstash Redis in Supabase Edge Functions
 products: ["redis"]
-stack: ["Node.js", "Supabase Edge Functions"]
-use_cases: ["Introduction", "Edge"]
+languages: ["ts"]
+platforms: ["Supabase"]
+stack: ["Node.js"]
+use_cases: ["State Store"]
 author: "thorwebdev"
 ---
 
@@ -55,5 +57,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-
-

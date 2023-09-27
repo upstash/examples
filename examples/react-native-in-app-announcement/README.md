@@ -1,9 +1,10 @@
 ---
 title: React Native with Upstash
-products: ["redis"]
-stack: ["React Native"]
-use_cases: ["Mobile app"]
-author: "omeraytac"
+products: ['redis']
+stack: ['React Native']
+languages: ['js']
+use_cases: ['Session Management']
+author: 'omeraytac'
 ---
 
 <br />
@@ -28,4 +29,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-

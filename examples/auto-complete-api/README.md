@@ -1,15 +1,16 @@
 ---
 title: Autocomplete API with Serverless Redis
 products: ["redis"]
-stack: ["Node.js","Serverless"]
+stack: ["Node.js"]
+languages: ["ts"]
 use_cases: ["Autocomplete"]
+platforms: ["Vercel"]
+preview_url: "https://auto-complete-example.vercel.app/"
 author: "noahfschr"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Autocomplete API with Serverless Redis</h3>
 
@@ -18,7 +19,6 @@ author: "noahfschr"
 
   </p>
 </div>
-
 
 ## Autocomplete API with Serverless Redis
 

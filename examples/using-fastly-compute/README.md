@@ -1,8 +1,10 @@
 ---
 title: Use Redis in Fastly Compute
 products: ["redis"]
-stack: ["Node.js", "Fastly Compute"]
-use_cases: ["Introduction", "Edge"]
+languages: ["js"]
+platforms: ["Fastly"]
+stack: ["Node.js"]
+use_cases: ["State Store"]
 author: "enesakar"
 ---
 

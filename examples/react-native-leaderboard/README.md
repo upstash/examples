@@ -1,9 +1,10 @@
 ---
 title: React Native Leaderboard with Upstash
-products: ["redis"]
-stack: ["React Native", "Serverless"]
-use_cases: ["Mobile app"]
-author: "omeraytac"
+products: ['redis']
+stack: ['React Native', 'Serverless']
+languages: ['js']
+use_cases: ['Leaderboard']
+author: 'omeraytac'
 ---
 
 <br />
@@ -28,5 +29,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-
-

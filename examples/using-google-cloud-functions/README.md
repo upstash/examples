@@ -1,8 +1,10 @@
 ---
 title: Using Google Cloud Functions with Upstash
 products: ["redis"]
-stack: ["Node.js", "Google Cloud Functions"]
-use_cases: ["Introduction"]
+languages: ["js"]
+platforms: ["GCP"]
+stack: ["Node.js"]
+use_cases: ["State Store"]
 author: "enesakar"
 ---
 

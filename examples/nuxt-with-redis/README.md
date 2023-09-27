@@ -1,8 +1,9 @@
 ---
 title: NuxtJS with Redis
 products: ["redis"]
-stack: ["Nuxt.js"]
-use_cases: ["State store"]
+stack: ["Nuxt.js", "Vue.js"]
+languages: ["js"]
+use_cases: ["State Store"]
 author: "ademilter"
 ---
 

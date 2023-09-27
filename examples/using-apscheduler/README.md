@@ -1,15 +1,14 @@
 ---
 title: Apscheduler with Upstash Redis
 products: ["redis"]
-stack: ["Python","Apscheduler"]
-use_cases: ["scheduling", "Coin price monitoring", "notification"]
+languages: ["py"]
+use_cases: ["Queue"]
+stack: ["Flask"]
 author: "burak-upstash"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Apscheduler with Upstash Redis</h3>
 
@@ -19,7 +18,6 @@ author: "burak-upstash"
   </p>
 </div>
 
-
 [Apscheduler](https://github.com/agronholm/apscheduler) with Upstash Redis
 
 For this example, we are running scheduled processing, where we fetch 'eth' and 'btc' coin prices (mocked up by random int generation - since many APIs exist).
@@ -27,9 +25,11 @@ For this example, we are running scheduled processing, where we fetch 'eth' and 
 Whenever the current value is above the threshold value, the process sends a notification to the email given (emulated by console logging.)
 
 ### Install Dependencies
+
 `pip install -r requirements.txt`
 
 ### Start the process
+
 `python3 main.py --clear` (remove `--clear` not to erase scheduled jobs)
 
 ### Learn More

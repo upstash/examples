@@ -1,15 +1,14 @@
 ---
 title: Serverless Histogram API with Redis
 products: ["redis"]
-stack: ["Node.js", "Express"]
-use_cases: ["Histogram"]
+languages: ["js"]
+stack: ["Node.js"]
+use_cases: ["Analytics"]
 author: "noahfschr"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Serverless Histogram API with Redis</h3>
 

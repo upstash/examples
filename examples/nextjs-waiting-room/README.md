@@ -1,8 +1,10 @@
 ---
 title: Next.js Waiting Room
 products: ["redis"]
-stack: ["Next.js", "Vercel"]
-use_cases: ["Waiting room"]
+stack: ["Next.js"]
+platforms: ["Vercel"]
+languages: ["ts"]
+use_cases: ["Queue"]
 blog_url: "https://upstash.com/blog/nextjs-edge-waiting-room"
 author: "chronark"
 ---
@@ -61,4 +63,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-

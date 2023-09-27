@@ -1,8 +1,10 @@
 ---
 title: Use Redis in Cloudflare Workers
 products: ["redis"]
-stack: ["Node.js", "Cloudflare Workers"]
-use_cases: ["Introduction"]
+languages: ["js"]
+stack: ["Node.js"]
+platforms: ["Cloudflare"]
+use_cases: ["State Store"]
 author: "enesakar"
 ---
 
@@ -27,4 +29,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-

@@ -1,14 +1,14 @@
 ---
 title: NextAuth.js with Upstash Redis
 products: ["redis"]
-stack: ["Next.js", "NextAuth.js"]
-use_cases: ["Authentication"]
+stack: ["Next.js", "Auth.js"]
+languages: ["ts"]
+use_cases: ["Authentication", "Session Management"]
+preview_url: ["https://upstash-redis-with-nextauth.vercel.app"]
 author: "moinulmoin"
 ---
 
 This is an example of how to do [Next.js](https://nextjs.org/) Authentication with [NextAuth.js](https://next-auth.js.org/) and [Serverless Redis by Upstash](https://upstash.com/).
-
-Live Demo: [upstash-redis-with-nextauth.vercel.app](https://upstash-redis-with-nextauth.vercel.app)
 
 ## Getting Started
 

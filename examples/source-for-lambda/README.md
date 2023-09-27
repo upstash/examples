@@ -1,8 +1,10 @@
 ---
 title: Lambda Example
 products: ["kafka"]
-stack: ["Node.js", "AWS Lambda"]
-use_cases: ["Introduction", "Lambda functions"]
+stack: ["Node.js"]
+platforms: ["AWS"]
+languages: ["js"]
+use_cases: ["Queue"]
 author: "enesakar"
 ---
 

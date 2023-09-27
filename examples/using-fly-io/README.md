@@ -1,8 +1,10 @@
 ---
 title: Fly Example with Redis
 products: ["redis"]
-stack: ["Node.js", "Fly"]
-use_cases: ["Introduction"]
+languages: ["js"]
+platforms: ["fly.io"]
+stack: ["Node.js"]
+use_cases: ["State Store"]
 author: "enesakar"
 ---
 
@@ -16,11 +18,11 @@ author: "enesakar"
   </p>
 </div>
 
-This is a simple application used in the [fly.io Getting Started](https://fly.io/docs/getting-started/node/)  documentation showing how to deploy a Node application using Flyctl's builtin Nodejs deployment option.
+This is a simple application used in the [fly.io Getting Started](https://fly.io/docs/getting-started/node/) documentation showing how to deploy a Node application using Flyctl's builtin Nodejs deployment option.
 
-* Run flyctl init
-* When prompted for a builder, select builtin Nodejs.
-* Run flyctl deploy
+- Run flyctl init
+- When prompted for a builder, select builtin Nodejs.
+- Run flyctl deploy
 
 ### Learn More
 
@@ -31,4 +33,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-

@@ -1,8 +1,10 @@
 ---
 title: Serverless Cloud with Upstash
 products: ["redis"]
-stack: ["Next.js", "Edge function"]
-use_cases: ["Introduction"]
+stack: ["Next.js"]
+platforms: ["Vercel"]
+languages: ["js"]
+use_cases: ["Session Management"]
 author: "enesakar"
 ---
 

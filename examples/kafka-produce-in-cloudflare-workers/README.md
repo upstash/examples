@@ -1,8 +1,9 @@
 ---
 title: Kafka in Cloudflare Workers
-products: [ "kafka"]
-stack: ["Node.js", "Cloudflare Workers"]
-use_cases: ["Introduction"]
+products: ["kafka"]
+stack: ["Node.js"]
+platforms: ["Cloudflare"]
+use_cases: ["Data Streaming"]
 author: "enesakar"
 ---
 

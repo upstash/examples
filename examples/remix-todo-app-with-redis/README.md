@@ -2,7 +2,8 @@
 title: Remix Todo App with Redis
 products: ["redis"]
 stack: ["Node.js", "Remix"]
-use_cases: ["Todo"]
+languages: ['ts']
+use_cases: ["State Store"]
 author: "chronark"
 ---
 

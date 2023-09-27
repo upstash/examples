@@ -9,6 +9,8 @@ type ExampleResponseObject = {
   products: string[];
   stack: string[];
   useCases: string[];
+  languages: string[];
+  platforms?: string[];
   body: string;
   githubUrl: string;
   author: string;
@@ -25,6 +27,7 @@ export function GET(req: NextRequest) {
         products: e.products,
         stack: e.stack,
         useCases: e.use_cases,
+        languages: e.languages,
         body: e.body.raw,
         githubUrl: e.github_url,
         author: e.author,
@@ -36,6 +39,10 @@ export function GET(req: NextRequest) {
 
       if (e.blog_url) {
         exampleObject.blogUrl = e.blog_url;
+      }
+
+      if (e.platforms) {
+        exampleObject.platforms = e.platforms;
       }
 
       return exampleObject;

@@ -2,7 +2,8 @@
 title: Redis Rust Client Config for Upstash Redis
 products: ["redis"]
 stack: ["Rust"]
-use_cases: ["Introduction", "Configuration"]
+languages: ["rs"]
+use_cases: ["Data Storage"]
 author: "dependabot"
 ---
 
@@ -19,6 +20,7 @@ author: "dependabot"
 Simply provide the `host`, `password` and `port` fields given in [Upstash Console](https://console.upstash.com) and export as env variables.
 
 ### Run the sample
+
 `cargo run`
 
 ### Learn More

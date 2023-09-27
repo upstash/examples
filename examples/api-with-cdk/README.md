@@ -1,11 +1,12 @@
 ---
 title: Building an API with CDK and Redis
 products: ["redis"]
-stack: ["Node.js", "Typescript", "CDK"]
-use_cases: ["Introduction", "CDK"]
+stack: ["Node.js"]
+use_cases: ["State Store"]
+platforms: ["AWS"]
+languages: ["ts"]
 author: "noahfschr"
 ---
-
 
 <br />
 <div align="center">

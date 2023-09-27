@@ -1,15 +1,15 @@
 ---
 title: Edge Analytics with Cloudflare Workers
 products: ["redis"]
-stack: ["Node.js", "Cloudflare Workers"]
-use_cases: ["Analytics", "Edge"]
+languages: ["js"]
+stack: ["Node.js"]
+platforms: ["Cloudflare"]
+use_cases: ["Analytics"]
 author: "noahfschr"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Edge Analytics with Cloudflare Workers</h3>
 
@@ -17,7 +17,6 @@ author: "noahfschr"
 Access log analytics with CloudFlare Workers and Upstash Redis.
   </p>
 </div>
-
 
 This example erforms edge analytics on access logs using CloudFlare Workers and Upstash Redis, extracting page views, unique visitors, top countries, and top pages for a specified date.
 

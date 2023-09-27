@@ -1,8 +1,9 @@
 ---
 title: SvelteKit Todo App with Redis
 products: ["redis"]
-stack: ["SvelteKit", "tRPC", "Tanstack Query"]
-use_cases: ["Ratelimiting"]
+stack: ["Sveltekit"]
+languages: ["ts"]
+use_cases: ["Ratelimit"]
 author: "multiplehats"
 ---
 

@@ -1,8 +1,10 @@
 ---
 title: Blazing fast websites with Remix on Cloudflare Workers and Upstash Redis
 products: ["redis"]
-stack: ["Node.js", "Remix", "Cloudflare Workers"]
-use_cases: ["Introduction"]
+stack: ["Node.js", "Remix"]
+platforms: ["Cloudflare"]
+languages: ["js"]
+use_cases: ["State Store"]
 author: "zunkelty"
 ---
 

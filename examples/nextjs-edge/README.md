@@ -2,7 +2,9 @@
 title: Next.js Edge Functions
 products: ["redis"]
 stack: ["Next.js"]
-use_cases: ["Edge"]
+languages: ["ts"]
+blog_url: "https://upstash.com/blog/getstarted-nextjs-edge-with-redis"
+use_cases: ["Data Storage"]
 author: "chronark"
 ---
 

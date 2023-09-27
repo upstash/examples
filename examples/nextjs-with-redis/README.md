@@ -2,7 +2,8 @@
 title: Next.js with Redis
 products: ["redis"]
 stack: ["Next.js"]
-use_cases: ["State store"]
+use_cases: ["State Store"]
+languages: ["js"]
 author: "enesakar"
 ---
 
@@ -19,6 +20,7 @@ author: "enesakar"
 A sample web application which uses Redis as state store in Next.js application.
 
 See the [tutorial](https://docs.upstash.com/tutorials/nextjs_with_redis) for details.
+
 ### Learn More
 
 To learn more about Upstash and its services, check out the following resources:
@@ -28,4 +30,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-

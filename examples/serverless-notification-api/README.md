@@ -2,7 +2,8 @@
 title: Serverless Notification API with Redis
 products: ["redis"]
 stack: ["React"]
-use_cases: ["Notification"]
+languages: ["js"]
+use_cases: ["Session Management"]
 author: "enesakar"
 ---
 
@@ -86,6 +87,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 ### Learn More
 
 To learn more about Upstash and its services, check out the following resources:
@@ -95,4 +97,3 @@ To learn more about Upstash and its services, check out the following resources:
 - [Blog](https://upstash.com/blog)
 - [Console](https://console.upstash.com)
 - [Discord](https://upstash.com/discord)
-

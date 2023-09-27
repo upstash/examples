@@ -1,15 +1,15 @@
 ---
 title: Using AWS Lambda with Upstash Redis
 products: ["redis"]
-stack: ["Node.js", "AWS Lambda"]
-use_cases: ["Introduction", "Ratelimiting"]
+languages: ["js"]
+platforms: ["AWS"]
+stack: ["Node.js"]
+use_cases: ["State Store"]
 author: "enesakar"
 ---
 
-
 <br />
 <div align="center">
-
 
   <h3 align="center">Using AWS Lambda with Upstash Redis</h3>
 
@@ -19,9 +19,7 @@ author: "enesakar"
   </p>
 </div>
 
-
 This example showcases a basic AWS Lambda function that utilizes Upstash Redis.
-
 
 ### Learn More
 
