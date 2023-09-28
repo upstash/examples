@@ -2,7 +2,7 @@
 title: Sidekiq Mailer
 products: ["redis"]
 languages: ["rb"]
-stack: ["Sidekiq"]
+stack: ["Sidekiq", "fly.io]
 use_cases: ["Session Management", "Queue"]
 author: "noahfschr"
 ---
