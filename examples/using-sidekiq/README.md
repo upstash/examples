@@ -16,7 +16,8 @@ author: "noahfschr"
     Optimize your email processing workflows with Sidekiq Mailer, seamlessly leveraging the power of Upstash Redis for efficient queuing, background job processing, and reliable email delivery.
   </p>
 </div>
-![Workflow](https://github.com/upstash/examples/blob/main/examples/using-sidekiq/static/celery.png?raw=true)
+
+![Workflow](https://raw.githubusercontent.com/upstash/examples/main/examples/using-sidekiq/static/sidekiq.png)
 
 ## A simple scenario, showcasing background job processing capabilities by using Upstash Redis.
 
