@@ -4,7 +4,7 @@ products: ["redis"]
 stack: ["Rust"]
 languages: ["rs"]
 use_cases: ["Data Storage"]
-author: "dependabot"
+author: "noahfschr"
 ---
 
 <br />

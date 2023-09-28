@@ -4,7 +4,7 @@ products: ["redis"]
 languages: ["js"]
 stack: ["Node.js", "Serverless"]
 use_cases: ["State Store"]
-author: "dependabot"
+author: "noahfschr"
 ---
 
 <br />

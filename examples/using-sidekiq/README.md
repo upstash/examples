@@ -4,7 +4,7 @@ products: ["redis"]
 languages: ["rb"]
 stack: ["Sidekiq"]
 use_cases: ["Session Management", "Queue"]
-author: "dependabot"
+author: "noahfschr"
 ---
 
 <br />

@@ -5,7 +5,7 @@ languages: ["rb"]
 platforms: ["Vercel"]
 stack: ["Serverless"]
 use_cases: ["Queue"]
-author: "dependabot"
+author: "noahfschr"
 ---
 
 <br />
