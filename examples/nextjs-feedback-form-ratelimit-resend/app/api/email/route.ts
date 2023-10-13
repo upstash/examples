@@ -29,19 +29,21 @@ export async function POST(req: NextRequest) {
     if (!number) {
       return new NextResponse("Number is required", { status: 400 });
     }
-
-    await resend.emails.send({
-      from: "Contact Form <onboarding@upstash.app>",
-      to: "YOUR_EMAIL_WITH_WHICH_YOU_HAVE_CREATED_THE_ACCOUNT_IN_RESEND[If you are using the free plan and do not have verified domain]",
-      subject: `${name} send you this message.`,
-      reply_to: email,
-      react: React.createElement(FeedbackFormEmail, {
-        message: message,
-        email: email,
-        name: name,
-        number: number,
-      }),
-    });
+    // Uncomment this to send the form content to your own email
+    // Because this is a public demo, we don't want to receive a lot of spam :D
+    //
+    // await resend.emails.send({
+    //   from: "Contact Form <onboarding@upstash.app>",
+    //   to: "YOUR_EMAIL_WITH_WHICH_YOU_HAVE_CREATED_THE_ACCOUNT_IN_RESEND[If you are using the free plan and do not have verified domain]",
+    //   subject: `${name} send you this message.`,
+    //   reply_to: email,
+    //   react: React.createElement(FeedbackFormEmail, {
+    //     message: message,
+    //     email: email,
+    //     name: name,
+    //     number: number,
+    //   }),
+    // });
 
     await resend.emails.send({
       from: "Upstash Team <feedback@upstash.app>",
