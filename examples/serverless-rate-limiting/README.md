@@ -2,7 +2,7 @@
 title: Rate Limiting AWS Lambda with Redis
 products: ["redis"]
 stack: ["Node.js"]
-platforms: "AWS"
+platforms: ["AWS"]
 languages: ["js"]
 use_cases: ["Ratelimit"]
 author: "enesakar"

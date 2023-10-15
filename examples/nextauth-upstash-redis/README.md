@@ -4,7 +4,7 @@ products: ["redis"]
 stack: ["Next.js", "Auth.js"]
 languages: ["ts"]
 use_cases: ["Authentication", "Session Management"]
-preview_url: ["https://upstash-redis-with-nextauth.vercel.app"]
+preview_url: "https://upstash-redis-with-nextauth.vercel.app"
 author: "moinulmoin"
 ---
 

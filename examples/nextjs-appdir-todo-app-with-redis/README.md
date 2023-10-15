@@ -1,6 +1,7 @@
 ---
 title: Next.js Todo App with Redis using app directory
 products: ["redis"]
+languages: ["ts"]
 stack: ["Next.js", "Typescript"]
 use_cases: ["Primary Database"]
 author: "trace2798"

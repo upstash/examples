@@ -1,7 +1,7 @@
 ---
 title: Produce and Consume for aiokafka
 products: ["redis", "kafka"]
-language: ["py"]
+languages: ["py"]
 stack: ["Flask"]
 use_cases: ["Data Streaming"]
 author: "enesakar"
