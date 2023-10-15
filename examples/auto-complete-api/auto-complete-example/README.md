@@ -1,3 +1,11 @@
+---
+title: Auto Complete Example
+products: ["redis"]
+stack: ["React"]
+languages: ["js"]
+use_cases: []
+author: "enesakar"
+---
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

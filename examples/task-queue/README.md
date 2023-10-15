@@ -2,7 +2,7 @@
 title: Task Queue with Bull
 products: ["redis"]
 stack: ["Node.js"]
-language: ["js"]
+languages: ["js"]
 use_cases: ["Queue"]
 author: "noahfschr"
 ---

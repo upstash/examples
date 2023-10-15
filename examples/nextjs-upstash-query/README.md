@@ -2,7 +2,7 @@
 title: "@upstash/query with Next.js"
 products: ["redis"]
 stack: ["Next.js", "Vercel"]
-language: "ts"
+languages: ["ts"]
 use_cases: ["Data Storage"]
 blog_url: "https://upstash.com/blog/query"
 author: "chronark"

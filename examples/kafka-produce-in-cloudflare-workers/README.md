@@ -2,6 +2,7 @@
 title: Kafka in Cloudflare Workers
 products: ["kafka"]
 stack: ["Node.js"]
+languages: ["js"]
 platforms: ["Cloudflare"]
 use_cases: ["Data Streaming"]
 author: "enesakar"

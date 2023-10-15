@@ -3,7 +3,8 @@ title: Caching for Next.js App with Redis
 products: ["redis"]
 stack: ["Next.js"]
 use_cases: ["Caching"]
-platform: ["Vercel"]
+languages: ["js"]
+platforms: ["Vercel"]
 blog_url: "https://upstash.com/blog/nextjs-caching-with-redis"
 preview_url: "https://next-caching-with-redis.vercel.app/"
 author: "ademilter"
