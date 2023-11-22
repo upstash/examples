@@ -13,7 +13,7 @@ A simple URL shortener implemented in NestJS using Upstash Redis.
 
 ## Overview
 
-This tutorial guides you through the process of building a URL shortener with NestJS and utilizing Upstash Redis for efficient storage and retrieval.
+This repo guides you through the process of building a URL shortener with NestJS and utilizing Upstash Redis for efficient storage and retrieval.
 
 ## Features
 
@@ -22,7 +22,7 @@ This tutorial guides you through the process of building a URL shortener with Ne
 - **Retrieve All Shortened URLs**: GET requests to `/get-all-shortened-url/:id` to retrieve all URLs associated with a specific ID.
 
 
-In this tutorial, we will produce events to Upstash Kafka from an AWS Lambda function.
+See the <a href="https://upstash.com/blog/nestjs-redis-url-shortener">tutorial</a> for details.
 
 ### Learn More
 
