@@ -5,7 +5,7 @@ stack: ["Next.js", "WebSocket"]
 platforms: ["fly.io"]
 languages: ["ts"]
 use_cases: ["State Store", "Caching"]
-preview_url: "https://next-chatapp-with-kafka.fly.dev/"
+preview_url: "https://next-message.fly.dev"
 blog_url: "https://upstash.com/blog/next-chatapp-with-kafka"
 author: "fahreddinozcan"
 ---
