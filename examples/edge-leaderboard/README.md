@@ -19,7 +19,7 @@ author: "noahfschr"
   </p>
 </div>
 
-See the [tutorial](https://docs.upstash.com/tutorials/edge_leaderboard).
+See the [tutorial](https://upstash.com/docs/redis/tutorials/edge_leaderboard).
 
 ## Run the Example
 - Copy `wrangler.toml.example` to `wrangler.toml`

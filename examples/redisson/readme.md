@@ -19,7 +19,7 @@ author: "noahfschr"
 
 Example Java code which connect to Upstash with [Redisson](https://github.com/redisson/redisson).
 
-See the [tutorial](https://docs.upstash.com/tutorials/redisson) for details.
+See the [tutorial](https://upstash.com/docs/redis/tutorials/redisson) for details.
 
 ### Learn More
 

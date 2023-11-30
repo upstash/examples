@@ -4,7 +4,7 @@ products: ["redis"]
 languages: ["js"]
 stack: ["Node.js"]
 use_cases: ["GraphQL"]
-blog_url: "https://docs.upstash.com/tutorials/coin_price_list"
+blog_url: "https://upstash.com/docs/redis/tutorials/coin_price_list"
 author: "noahfschr"
 ---
 
@@ -19,7 +19,7 @@ author: "noahfschr"
   </p>
 </div>
 
-See the [tutorial](https://docs.upstash.com/tutorials/coin_price_list) for details.
+See the [tutorial](https://upstash.com/docs/redis/tutorials/coin_price_list) for details.
 
 ### Learn More
 

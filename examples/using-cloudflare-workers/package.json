@@ -1,7 +1,7 @@
 {
   "name": "using-cloudflare-workers",
   "version": "1.0.0",
-  "description": "See the [article](https://docs.upstash.com/tutorials/cloudflare_workers_with_redis).",
+  "description": "See the [article](https://upstash.com/docs/redis/tutorials/cloudflare_workers_with_redis).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

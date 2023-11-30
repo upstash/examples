@@ -18,7 +18,7 @@ author: "enesakar"
   </p>
 </div>
 
-See the [tutorial](https://docs.upstash.com/tutorials/cloud_run_sessions) for details.
+See the [tutorial](https://upstash.com/docs/redis/tutorials/cloud_run_sessions) for details.
 
 ### Learn More
 

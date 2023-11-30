@@ -20,7 +20,7 @@ author: "enesakar"
 
 This example showcases how to rate limit your AWS Lambda function using Serverless Redis.
 
-See [the tutorial](https://docs.upstash.com/tutorials/rate-limiting) for details.
+See [the tutorial](https://upstash.com/docs/redis/tutorials/rate-limiting) for details.
 
 ```
 
