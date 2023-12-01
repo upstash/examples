@@ -30,7 +30,7 @@ You can test the demo version of this project [here](https://auto-complete-examp
 
 This example implements an autocomplete API powered by serverless Redis.
 
-See the [tutorial](https://docs.upstash.com/tutorials/auto_complete_with_serverless_redis) for details.
+See the [tutorial](https://upstash.com/docs/redis/tutorials/auto_complete_with_serverless_redis) for details.
 
 ### Learn More
 

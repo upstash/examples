@@ -19,7 +19,7 @@ author: "noahfschr"
 
 This example implements a Serverless Histogram API powered by serverless Redis ([Upstash](https://upstash.com)).
 
-See the [tutorial](https://docs.upstash.com/tutorials/histogram) for details.
+See the [tutorial](https://upstash.com/docs/redis/tutorials/histogram) for details.
 
 ### Learn More
 

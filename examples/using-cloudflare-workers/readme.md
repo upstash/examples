@@ -18,7 +18,7 @@ author: "enesakar"
   </p>
 </div>
 
-See the [article](https://docs.upstash.com/tutorials/cloudflare_workers_with_redis).
+See the [article](https://upstash.com/docs/redis/tutorials/cloudflare_workers_with_redis).
 
 ### Learn More
 

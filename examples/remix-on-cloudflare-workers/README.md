@@ -20,7 +20,7 @@ author: "zunkelty"
 
 This example showcases how to build a Remix Run app that uses Upstash Redis and is deployed on Cloudflare Workers.
 
-See the [blog post](https://blog.upstash.com) for details.
+See the [blog post](https://upstash.com/blog/fast-websites-with-remix-on-cloudflare-and-upstash-redis) for details.
 
 ### Learn More
 
