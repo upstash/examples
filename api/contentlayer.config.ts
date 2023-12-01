@@ -2,7 +2,7 @@ import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
 export const Example = defineDocumentType(() => ({
   name: "Example",
-  filePathPattern: "./**/README.md",
+  filePathPattern: "**/{readme,README}.md",
 
   contentType: "markdown",
   fields: {
