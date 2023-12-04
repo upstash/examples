@@ -19,7 +19,7 @@ author: "noahfschr"
 
 This example shows how to use Upstash as the session storage of your Express application.
 
-See the [tutorial](https://upstash.com/docs/tutorials/express_session) for details.
+See the [tutorial](https://upstash.com/docs/redis/tutorials/express_session) for details.
 
 ### Learn More
 
