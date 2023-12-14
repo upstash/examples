@@ -1,0 +1,37 @@
+version: 2
+updates:
+
+  # Python packages
+  - package-ecosystem: "pip"
+    directory: "/examples/using-huey"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "pip"
+    directory: "/examples/using-apscheduler"
+    schedule:
+      interval: "daily"
+    
+  - package-ecosystem: "pip"
+    directory: "/examples/using-celery"
+    schedule:
+      interval: "daily"
+    
+
+  # Ruby packages
+  - package-ecosystem: "bundler"
+    directory: "/examples/using-sidekiq"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "bundler"
+    directory: "/examples/using-resque"
+    schedule:
+      interval: "daily"
+      
+
+  # Rust packages
+  - package-ecosystem: "cargo"
+    directory: "/examples/using_redis-rs"
+    schedule:
+      interval: "daily"
