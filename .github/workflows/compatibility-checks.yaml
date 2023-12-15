@@ -41,7 +41,7 @@ jobs:
         id: 'compare'
         run: |
           sed -i '/^\(Emailed to:\)/!d' sampleLogs2.log
-          diff <(sort sampleLogs.log) <(sort sampleLogs2.log)
+          diff <(sort sampleLogs.txt) <(sort sampleLogs2.log)
       - name: Run script for Sidekiq
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
@@ -183,7 +183,7 @@ jobs:
         id: 'compare'
         run: |
           sed -i '/^\(Enterprise process\|Free process\)/!d' sampleLogs2.log
-          diff sampleLogs.log sampleLogs2.log
+          diff sampleLogs.txt sampleLogs2.log
         env:
           UPSTASH_REDIS_HOST: ${{ secrets.UPSTASH_REDIS_HOST }}
           UPSTASH_REDIS_PASSWORD: ${{ secrets.UPSTASH_REDIS_PASSWORD }}
