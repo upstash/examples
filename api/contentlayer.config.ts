@@ -80,6 +80,7 @@ export const Example = defineDocumentType(() => ({
           "Authentication",
           "Web3",
           "Data Streaming",
+          "Task Scheduling",
         ],
       },
       required: true,
