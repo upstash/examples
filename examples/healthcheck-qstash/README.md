@@ -4,8 +4,10 @@ products: ["redis", "qstash"]
 languages: ["ts"]
 stack: ["Next.js"]
 platforms: ["Vercel"]
-use_cases: ["Task Scheduling"]
+use_cases: ["Task Scheduling", "State Store"]
 preview_url: https://healthcheck.upstash.app
+deploy_to_vercel_url: "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fupstash%2Fhealthcheck-example&env=QSTASH_CURRENT_SIGNING_KEY,QSTASH_NEXT_SIGNING_KEY,NEXT_PUBLIC_UPSTASH_REDIS_REST_URL,NEXT_PUBLIC_UPSTASH_REDIS_REST_TOKEN,QSTASH_REST_TOKEN,APP_URL
+"
 author: "fahreddinozcan"
 ---
 
@@ -19,9 +21,11 @@ author: "fahreddinozcan"
   </p>
 </div>
 
-Welcome! This example showcases a uptime monitoring system to observe the stability of your API endpoints and web applications.
+Welcome! This example showcases a uptime monitoring system to observe the stability of your API endpoints and web applications. It uses QStash for task scheduling, Upstash Redis as state store and Next.js, combined with beautiful ShadnUI.
 
 # Project Details
+
+The goal of this project is to create a serverless uptime status checker, without any long running server. To achieve this, we deploy Vercel Edge functions with Next.js, and schedule a job to this endpoints with QStash. Within these functions, we perform the ping operation and write the results to Upstash Redis using the proper data structures. On visit, we retrieve the data in Redis and render the page with Server Side Rendering. There are some additional features that uses Upstash management APIs.
 
 ## Scheduling Health Check for Specific Endpoint
 

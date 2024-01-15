@@ -9,6 +9,7 @@ export const Example = defineDocumentType(() => ({
     title: { type: "string", required: true },
     blog_url: { type: "string", required: false },
     preview_url: { type: "string", required: false },
+    deploy_to_vercel_url: { type: "string", required: false },
     products: {
       type: "list",
       of: { type: "enum", options: ["redis", "kafka", "qstash"] },
