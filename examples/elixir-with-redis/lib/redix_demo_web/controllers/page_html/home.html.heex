@@ -1,0 +1,33 @@
+<.flash_group flash={@flash} />
+<div class="container mx-auto px-4">
+  <h1 class="text-3xl font-bold mb-4">Redix Demo</h1>
+
+  <form action="/" method="get" class="w-full flex items-center mb-4">
+    <input type="text" name="text" placeholder="Location" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-blue-500">
+    <button type="submit" class="ml-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Submit</button>
+  </form>
+
+  <%= if @text do %>
+    <%= @text %>
+  <% end %>
+
+  <%= if @weather do %>
+    <div class=" text-lg bg-gray-100 rounded-lg p-4">
+
+      <%= if @location do %>
+        <strong>
+          Location:
+        </strong>
+        <%= @location %>
+      <% end %>
+
+      <p>
+        <strong>
+          Weather:
+        </strong>
+        <%= @weather %> °C
+      </p>
+
+    </div>
+  <% end %>
+</div>
