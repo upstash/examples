@@ -19,7 +19,7 @@ author: "CahidArda"
 
 A sample Phoneix app deployed on Fly which uses Redis to store results of requests to an external API.
 
-See the [tutorial](https://upstash.com/docs/redis/tutorials/elixir_with_redis) for details.
+See the [tutorial](https://upstash.com/docs/redis/quickstarts/elixir) for details.
 
 ### Learn More
 
