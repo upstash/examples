@@ -58,7 +58,7 @@ export const Example = defineDocumentType(() => ({
       type: "list",
       of: {
         type: "enum",
-        options: ["ts", "js", "rs", "go", "py", "java", "rb"],
+        options: ["ts", "js", "rs", "go", "py", "java", "rb", "elixir"],
       },
       required: true,
     },
