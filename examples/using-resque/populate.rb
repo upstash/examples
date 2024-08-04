@@ -1,4 +1,4 @@
-
+require 'bundler/setup'
 require "resque"
 require "./processes"
 require "./constants"
