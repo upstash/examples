@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
+          bundle config set path 'vendor/bundle'
           bundle install
         shell: bash
       - name: run
@@ -169,6 +170,7 @@ jobs:
       - name: Install dependencies
         run: |
           gem install bundler
+          bundle config set path 'vendor/bundle'
           bundle install
         shell: bash
       - name: Populate Queues

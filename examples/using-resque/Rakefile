@@ -1,5 +1,6 @@
+require 'bundler/setup'
 require 'resque'
-require 'resque/tasks'
+require 'resque/scheduler/tasks'
 require './processes'
 require './constants'
 
