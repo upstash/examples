@@ -12,7 +12,7 @@ export const Example = defineDocumentType(() => ({
     deploy_to_vercel_url: { type: "string", required: false },
     products: {
       type: "list",
-      of: { type: "enum", options: ["redis", "kafka", "qstash"] },
+      of: { type: "enum", options: ["redis", "qstash"] },
       required: true,
     },
     stack: {
