@@ -4,7 +4,7 @@ products: ["redis"]
 stack: ["Next.js"]
 use_cases: ["State Store"]
 languages: ["js"]
-author: "enesakar"
+author: "CahidArda"
 ---
 
 <br />
@@ -16,10 +16,6 @@ author: "enesakar"
    Transform your Next.js applications with Redis as a state holder, enabling efficient state management, scalability, and real-time updates for an enhanced user experience.
   </p>
 </div>
-
-A sample web application which uses Redis as state store in Next.js application.
-
-See the [tutorial](https://upstash.com/docs/redis/tutorials/nextjs_with_redis) for details.
 
 ### Learn More
 
