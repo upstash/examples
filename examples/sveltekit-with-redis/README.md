@@ -1,38 +1,26 @@
-# create-svelte
+---
+title: Caching for SvelteKit App with Redis
+products: ["redis"]
+stack: ["SvelteKit"]
+use_cases: ["Caching"]
+languages: ["js"]
+platforms: ["Vercel"]
+author: "CahidArda"
+---
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+<br />
+<div align="center">
 
-## Creating a project
+  <h3 align="center">Caching for SvelteKit App with Redis</h3>
 
-If you're seeing this, you've probably already done this step. Congrats!
+</div>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Learn More
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+To learn more about Upstash and its services, check out the following resources:
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- [Documentation](https://docs.upstash.com)
+- [Website](https://upstash.com)
+- [Blog](https://upstash.com/blog)
+- [Console](https://console.upstash.com)
+- [Discord](https://upstash.com/discord)
