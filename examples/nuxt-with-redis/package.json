@@ -1,22 +1,23 @@
 {
-  "name": "nuxt-with-redis",
-  "version": "1.0.0",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "core-js": "^3.32.0",
-    "ioredis": "^5.3.2",
-    "nuxt": "^3.6.5"
+    "@upstash/redis": "^1.34.3",
+    "nuxt": "^3.13.0",
+    "vue": "latest",
+    "vue-router": "latest"
   },
   "devDependencies": {
-    "@nuxt/types": "~2.17.1",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "postcss": "^8.4.27",
-    "prettier": "^3.0.1"
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
   }
 }
