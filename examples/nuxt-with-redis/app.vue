@@ -35,7 +35,7 @@
           </a>
           <a
             class="inline-flex items-center gap-1 px-3 py-2 bg-gray-100 rounded-md hover:bg-emerald-100"
-            href="https://github.com/upstash/examples/tree/main/examples/nextjs-with-redis"
+            href="https://github.com/upstash/examples/tree/main/examples/nuxt-with-redis"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
