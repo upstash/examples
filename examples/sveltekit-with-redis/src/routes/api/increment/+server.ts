@@ -1,11 +1,11 @@
-import { UPSTASH_REDIS_REST_TOKEN, UPSTASH_REDIS_REST_URL } from "$env/static/private";
+import * as env from "$env/static/private";
 import { json } from '@sveltejs/kit';
 import { Redis } from '@upstash/redis';
 
 // Initialize Redis
 const redis = new Redis({
-  url: UPSTASH_REDIS_REST_URL || "",
-  token: UPSTASH_REDIS_REST_TOKEN || ""
+  url: env.UPSTASH_REDIS_REST_URL || env.KV_REST_API_URL || "",
+  token: env.UPSTASH_REDIS_REST_TOKEN || env.KV_REST_API_TOKEN || ""
 });
 
 export async function GET() {
