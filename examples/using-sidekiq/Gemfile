@@ -3,5 +3,5 @@
 source "https://rubygems.org"
 
 gem "redis", "5.3.0"
-gem "sidekiq", "7.3.6"
+gem "sidekiq", "7.3.7"
 gem "sinatra", "~> 4.0"
