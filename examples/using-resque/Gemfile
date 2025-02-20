@@ -4,4 +4,4 @@ gem "resque", "2.6.0"
 gem 'resque-scheduler'
 
 
-gem "redis", "5.3.0"
+gem "redis", "5.4.0"
