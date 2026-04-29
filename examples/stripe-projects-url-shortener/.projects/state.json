@@ -6,6 +6,9 @@
     },
     "upstash": {
       "name": "Upstash"
+    },
+    "vercel": {
+      "name": "Vercel"
     }
   },
   "resources": {
@@ -18,6 +21,11 @@
       "name": "upstash-redis",
       "providerName": "Upstash",
       "serviceId": "redis"
+    },
+    "vercel-project": {
+      "name": "vercel-project",
+      "providerName": "Vercel",
+      "serviceId": "project"
     }
   }
 }

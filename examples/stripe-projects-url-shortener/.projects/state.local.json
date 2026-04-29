@@ -27,6 +27,16 @@
       "redirectUrl": null,
       "requestedAt": "2026-04-29T21:57:51.777Z",
       "status": "complete"
+    },
+    "vercel": {
+      "accountRequestId": "facctrq_61Ub4QAjTmnFIjap616P2SfsJCSQC1fRzkGTL2XIO7iK",
+      "configuration": {},
+      "linkedAt": "2026-04-29T22:20:18.258Z",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "redirectUrl": null,
+      "requestedAt": "2026-04-29T22:20:18.258Z",
+      "status": "complete"
     }
   },
   "resources": {
@@ -57,6 +67,20 @@
       "providerName": "Upstash",
       "resourceId": "fres_61Ub44WezWFH4L6Pq16P2SfsJCSQC1fRzkGTL2XIOUhs",
       "serviceId": "redis"
+    },
+    "vercel-project": {
+      "configuration": {
+        "name": "shorty",
+        "price": "free"
+      },
+      "createdAt": "2026-04-29T22:20:21.907Z",
+      "lastRevealedAt": "2026-04-29T22:20:22.460Z",
+      "lastStatus": "complete",
+      "name": "vercel-project",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "resourceId": "fres_61Ub4QFH5y0pDzkM916P2SfsJCSQC1fRzkGTL2XIOV3o",
+      "serviceId": "project"
     }
   }
 }
