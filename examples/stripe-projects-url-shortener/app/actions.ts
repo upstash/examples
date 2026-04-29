@@ -1,9 +1,9 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { headers } from "next/headers";
 import { customAlphabet } from "nanoid";
 import { Ratelimit } from "@upstash/ratelimit";
-import { createClient } from "@/lib/supabase/server";
 import { redis } from "@/lib/redis";
 
 const generateSlug = customAlphabet(
@@ -17,15 +17,19 @@ const ratelimit = new Ratelimit({
   prefix: "shorty:create",
 });
 
-export async function createLink(formData: FormData) {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (!user) throw new Error("Not signed in.");
+async function clientId() {
+  const h = await headers();
+  return (
+    h.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    h.get("x-real-ip") ||
+    "anonymous"
+  );
+}
 
-  const { success } = await ratelimit.limit(user.id);
-  if (!success) throw new Error("Slow down — 10 links per minute max.");
+export async function createLink(formData: FormData) {
+  const ip = await clientId();
+  const { success } = await ratelimit.limit(ip);
+  if (!success) throw new Error("Slow down — 10 links per minute per IP.");
 
   const targetUrl = String(formData.get("url"));
   try {
@@ -35,39 +39,25 @@ export async function createLink(formData: FormData) {
   }
 
   const slug = generateSlug();
+  const createdAt = Date.now();
 
-  const { error } = await supabase
-    .from("links")
-    .insert({ user_id: user.id, slug, target_url: targetUrl });
+  await Promise.all([
+    redis.hset(`link:${slug}`, {
+      target_url: targetUrl,
+      created_at: String(createdAt),
+    }),
+    redis.zadd("links:recent", { score: createdAt, member: slug }),
+  ]);
 
-  if (error) throw error;
-
-  // Warm the cache so the first click is also fast.
-  await redis.set(`link:${slug}`, targetUrl, { ex: 60 * 60 * 24 });
-
-  revalidatePath("/dashboard");
+  revalidatePath("/");
   return slug;
 }
 
 export async function deleteLink(slug: string) {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (!user) throw new Error("Not signed in.");
-
-  const { error } = await supabase
-    .from("links")
-    .delete()
-    .eq("slug", slug)
-    .eq("user_id", user.id);
-
-  if (error) throw error;
-
   await Promise.all([
     redis.del(`link:${slug}`),
     redis.del(`clicks:${slug}`),
+    redis.zrem("links:recent", slug),
   ]);
-
-  revalidatePath("/dashboard");
+  revalidatePath("/");
 }

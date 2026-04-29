@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { createLink } from "@/app/actions";
+import { createLink } from "./actions";
 
 export function CreateLinkForm() {
   const [error, setError] = useState<string | null>(null);

@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Shorty",
-  description: "URL shortener built with Stripe Projects, Supabase, and Upstash Redis.",
+  description: "URL shortener built with Stripe Projects + Upstash Redis.",
 };
 
 export default function RootLayout({

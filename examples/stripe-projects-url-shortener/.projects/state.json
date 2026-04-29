@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "providers": {
+    "supabase": {
+      "name": "Supabase"
+    },
+    "upstash": {
+      "name": "Upstash"
+    }
+  },
+  "resources": {
+    "supabase-project": {
+      "name": "supabase-project",
+      "providerName": "Supabase",
+      "serviceId": "project"
+    },
+    "upstash-redis": {
+      "name": "upstash-redis",
+      "providerName": "Upstash",
+      "serviceId": "redis"
+    }
+  }
+}

@@ -1,95 +1,47 @@
 # Shorty — URL shortener on Stripe Projects
 
-Companion code for the blog post **[Ship a Full-Stack App Without Opening a Dashboard](https://upstash.com/blog/ship-full-stack-app-stripe-projects)**.
+Companion code for the blog post **[Ship a URL Shortener Without Opening a Dashboard](https://upstash.com/blog/ship-full-stack-app-stripe-projects)**.
 
-A URL shortener with live click counters. The whole stack — Postgres, Redis, hosting — is provisioned through one CLI: `stripe projects add`.
+A public URL shortener with live click counters. The whole stack — data store and hosting — is provisioned through one CLI: `stripe projects add`.
 
 ## Stack
 
-- **Next.js 15** (App Router) on **Vercel**
-- **Supabase** for auth and the `links` table
-- **Upstash Redis** for the redirect cache, atomic click counters, and per-user rate limiting
-- **Stripe Projects CLI** to provision all three from your terminal
+- **Next.js 16** (App Router) on **Vercel**
+- **Upstash Redis** as the data layer — hash per link, sorted set for the recent list, atomic `INCR` for click counters, `@upstash/ratelimit` for abuse protection
+- **Stripe Projects CLI** to provision both from your terminal
 
-## Provision the stack
+## Provision and deploy
 
 ```bash
-stripe projects add supabase/postgres
+stripe projects init shorty
 stripe projects add upstash/redis
 stripe projects add vercel/project
 ```
 
-Each command provisions the resource and writes credentials to `.env`. After all three, your `.env` matches `.env.example`.
+Each command writes credentials to `.env` (locally) and attaches them to the Vercel project (in production). After the third command, your app is deployed.
 
-## Run the database migration
-
-```bash
-supabase db push
-```
-
-(or paste `supabase/migrations/20260430000000_links.sql` into the Supabase SQL editor.)
-
-## Develop
+## Develop locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open http://localhost:3000, sign in with a magic link, and shorten something.
-
-## Deploy
-
-```bash
-vercel deploy --prod
-```
-
-The Vercel project is already linked from `stripe projects add vercel/project`, and the env vars are already attached. There is no dashboard step.
+Open http://localhost:3000 and shorten something.
 
 ## Test
 
 ```bash
-SHORT=$(curl -s -X POST ...) # or just create one in the UI
-for i in $(seq 1 100); do
-  curl -s -o /dev/null https://your-app.vercel.app/$SHORT
-done
+SHORT=https://your-app.vercel.app/abc123
+for i in $(seq 1 100); do curl -s -o /dev/null $SHORT; done
 ```
 
-Refresh the dashboard. The counter says 100. None of those clicks touched Postgres.
-
-## Architecture
-
-```
-┌──────────────────────────┐
-│  Browser / curl          │
-└────────┬─────────────────┘
-         │
-         │  GET /:slug
-         ▼
-┌──────────────────────────┐         ┌──────────────────────┐
-│  Next.js Route Handler   │ ──────▶ │  Upstash Redis        │
-│  (Vercel)                │  GET    │  link:{slug}          │
-│                          │  INCR   │  clicks:{slug}        │
-│  cache miss ─────┐       │         └──────────────────────┘
-└──────────────────┼───────┘
-                   │
-                   │ SELECT target_url
-                   ▼
-         ┌──────────────────┐
-         │  Supabase (Postgres) │
-         │  links table         │
-         └──────────────────────┘
-```
-
-Hot path: Redis only. Cold path (first click after deploy): Postgres → Redis.
+Refresh the home page. The counter says 100.
 
 ## Files
 
-- `app/[slug]/route.ts` — redirect handler (Redis cache + Postgres fallback + INCR)
-- `app/actions.ts` — server actions: create / delete a link, with rate limit
-- `app/dashboard/page.tsx` — list links, show live click counts via `MGET`
-- `app/login/page.tsx` — magic-link sign-in
-- `lib/redis.ts` — `Redis.fromEnv()` singleton
-- `lib/supabase/server.ts` — cookie-based Supabase client (auth-aware)
-- `lib/supabase/public.ts` — anon Supabase client for the redirect path
-- `supabase/migrations/20260430000000_links.sql` — schema + RLS policies
+- `app/[slug]/route.ts` — redirect handler (Redis HGET + fire-and-forget INCR + 302)
+- `app/actions.ts` — server actions: create / delete a link, IP-rate-limited
+- `app/page.tsx` — recent links list with live click counts via `MGET`
+- `app/create-link-form.tsx` — client form with optimistic state
+- `lib/redis.ts` — Redis client (reads `UPSTASH_REST_URL` / `UPSTASH_REST_TOKEN` written by Stripe Projects)
