@@ -1,0 +1,26 @@
+{
+  "name": "nextjs-durable-agent-with-upstash-box",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ai-sdk/harness": "7.0.0-canary.1",
+    "@ai-sdk/harness-claude-code": "7.0.0-canary.1",
+    "@ai-sdk/sandbox-vercel": "7.0.0-canary.1",
+    "@upstash/box": "0.1.0",
+    "@upstash/redis": "^1.34.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
