@@ -16,7 +16,7 @@
     "@upstash/query": "0.0.1-canary.0",
     "@upstash/redis": "^1.22.0",
     "autoprefixer": "10.4.16",
-    "next": "13.5.2",
+    "next": "14.2.34",
     "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",

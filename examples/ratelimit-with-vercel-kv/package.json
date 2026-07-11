@@ -15,7 +15,7 @@
     "@upstash/ratelimit": "^0.4.3",
     "@vercel/kv": "^0.2.2",
     "autoprefixer": "10.4.14",
-    "next": "13.4.13",
+    "next": "14.2.34",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
