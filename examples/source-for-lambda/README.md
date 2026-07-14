@@ -18,7 +18,7 @@ author: "enesakar"
   </p>
 </div>
 
-Check the [tutorial](https://docs.upstash.com/kafka/howto/kafka-with-lambda).
+Check the [tutorial](https://docs.upstash.com/kafka/howto/eventsourceawslambda).
 
 ### Learn More
 
