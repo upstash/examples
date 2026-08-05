@@ -32,8 +32,12 @@ node --env-file=.env --import tsx src/index.ts
 ```
 
 Set `UPSTASH_VECTOR_REST_URL` and `UPSTASH_VECTOR_REST_TOKEN` in `.env` before
-running. The script deletes its sample records before and after the run, so
-repeated executions do not leave demo data behind.
+running. Upstash Vector indexes new records asynchronously, so the example
+retries the search at one-second intervals for up to five attempts while the
+stored records become
+queryable. It deletes its sample records before and after the run, including
+when indexing does not complete within that retry window, so repeated
+executions do not leave demo data behind.
 
 ## Validate without credentials
 
