@@ -22,7 +22,7 @@ author: "chronark"
 
 This example showcases how you can add serverless ratelimiting to a Next.js app on Vercel using [@upstash/ratelimit](https://github.com/upstash/ratelimit-js) and [@upstash/redis](https://github.com/upstash/redis-js).
 
-Vercel KV stores now run on Upstash Redis and `@vercel/kv` is deprecated, so this example uses `@upstash/redis` directly. `Redis.fromEnv()` reads `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`, or the `KV_REST_API_URL` and `KV_REST_API_TOKEN` variables that the Vercel integration sets, so existing Vercel KV projects need no change.
+`Redis.fromEnv()` reads `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`, or the `KV_REST_API_URL` and `KV_REST_API_TOKEN` variables that the Vercel integration sets.
 
 ## Demo
 
