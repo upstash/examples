@@ -49,13 +49,7 @@ An Upstash Redis database, created either in the [Upstash Console](https://conso
    ```sh
    pnpm install
    ```
-3. Copy `.env.example` to `.env.local` and enter your database's REST URL and token. On Vercel, `vercel env pull .env.local` fills in the variables the integration set.
-
-   ```.env
-   UPSTASH_REDIS_REST_URL=""
-   UPSTASH_REDIS_REST_TOKEN=""
-   ```
-
+3. Pull the database's variables with `vercel env pull .env.local`, or add them to `.env.local` yourself (see `.env.example`).
 4. Run the app
    ```sh
    pnpm dev
