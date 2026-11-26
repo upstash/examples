@@ -30,13 +30,13 @@ This example showcases how you can add serverless ratelimiting to a Next.js app 
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fupstash%2Fexamples%2Ftree%2Fmain%2Fexamples%2Fratelimit-with-vercel-marketplace&project-name=ratelimit-with-vercel-marketplace&repository-name=ratelimit-with-vercel-marketplace&stores=%5B%7B%22type%22%3A%22integration%22%2C%22integrationSlug%22%3A%22upstash%22%2C%22productSlug%22%3A%22upstash-kv%22%2C%22protocol%22%3A%22storage%22%7D%5D)
 
-The button creates an Upstash Redis database through the Vercel Marketplace and connects it to the new project.
+The button creates an Upstash Redis database through the Upstash integration and connects it to the new project.
 
 ## Getting Started
 
 ### Prerequisites
 
-An Upstash Redis database, created either in the [Upstash Console](https://console.upstash.com) or through the [Upstash integration on the Vercel Marketplace](https://vercel.com/marketplace/upstash).
+An Upstash Redis database, created either in the [Upstash Console](https://console.upstash.com) or through the [Upstash integration on Vercel](https://vercel.com/marketplace/upstash).
 
 ### Quickstart
 
