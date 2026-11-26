@@ -15,7 +15,7 @@ author: "chronark"
   <h3 align="center">Ratelimiting with Upstash Redis on Vercel</h3>
 
   <p align="center">
-    Ratelimit your serverless and edge functions with Upstash Redis from the Vercel Marketplace
+    Ratelimit your serverless and edge functions with Upstash Redis on Vercel
 
   </p>
 </div>
