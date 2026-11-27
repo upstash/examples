@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { headers } from "next/headers";
-import kv from "@vercel/kv";
+import { Redis } from "@upstash/redis";
 import { Ratelimit } from "@upstash/ratelimit";
 import Link from "next/link";
 
 const ratelimit = new Ratelimit({
-  redis: kv,
+  redis: Redis.fromEnv(),
   limiter: Ratelimit.fixedWindow(10, "60s"),
 });
 
@@ -20,7 +20,7 @@ export default async function Home() {
         <p className="fixed top-0 left-0 flex justify-center w-full pt-8 pb-6 border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Check out the source at&nbsp;
           <Link
-            href="https://github.com/upstash/examples/tree/main/examples/ratelimit-with-vercel-kv"
+            href="https://github.com/upstash/examples/tree/main/examples/ratelimit-with-vercel-marketplace"
             className="font-mono font-bold"
           >
             github.com/upstash/examples
@@ -34,7 +34,7 @@ export default async function Home() {
             @upstash/ratelimit
             <br />+
             <br />
-            Vercel KV
+            Upstash Redis
           </>
         ) : (
           <>

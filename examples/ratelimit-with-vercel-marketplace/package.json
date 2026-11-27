@@ -1,5 +1,5 @@
 {
-  "name": "with-vercel-kv",
+  "name": "ratelimit-with-vercel-marketplace",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,8 +12,8 @@
     "@types/node": "20.4.9",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
-    "@upstash/ratelimit": "^0.4.3",
-    "@vercel/kv": "^0.2.2",
+    "@upstash/ratelimit": "^2.2.2",
+    "@upstash/redis": "^1.41.1",
     "autoprefixer": "10.4.14",
     "next": "13.4.13",
     "postcss": "8.4.27",
